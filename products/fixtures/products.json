@@ -1,0 +1,226 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "Adventure kit",
+            "description": "Adventure kit for your pooch",
+            "price": 53.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "adventure-kit.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": "Anti chew gum",
+            "description": "Stop your dog chewing through everything",
+            "price": 58.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "anti-chew-gum.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001730010",
+            "name": "Black Jackie Sweater",
+            "description": "Gorgeous black jackie sweater",
+            "price": 205.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "black-full-size-min.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001890157",
+            "name": "Black Mollie Sweater",
+            "description": "Beautiful black Mollie sweater",
+            "price": 169.99,
+            "category": 7,
+            "rating": 3.0,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "black-jumper-model.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002111605",
+            "name": "Blue bowl",
+            "description": "Blue food bowl",
+            "price": 232.99,
+            "category": 7,
+            "rating": 5.0,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "blue-bowl.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002260206",
+            "name": "Blue Jackie Sweater",
+            "description": "Gorgeous blue sweater",
+            "price": 30.99,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "blue-full-size-min.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002440521",
+            "name": "Dog Shampoo",
+            "description": "Wash your dog's hair",
+            "price": 59.0,
+            "category": 4,
+            "rating": 4.4,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "dog-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002601115",
+            "name": "Dog treats",
+            "description": "Treats for your dog",
+            "price": 36.99,
+            "category": 7,
+            "rating": 4.5,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "dog-treats.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002690715",
+            "name": "Pink Jackie Sweater",
+            "description": "Gorgeous pink sweater",
+            "price": 169.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "pink-full-size-min.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002701115",
+            "name": "Pink Zazu sweater",
+            "description": "Lovely pink Zazu sweater",
+            "price": 33.99,
+            "category": 7,
+            "rating": 4.4,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "pink-jumper-model.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002761055",
+            "name": "Pink Zazu sweater (no model)",
+            "description": "Pink sweater with no model",
+            "price": 29.99,
+            "category": 3,
+            "rating": 3.0,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81B0C2D9M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "pink-jumper-no-model.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820069",
+            "name": "Travel cage",
+            "description": "Cage for transporting your pooch",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "travel-cage.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820147",
+            "name": "Large white dog bowl",
+            "description": "Large white bowl for your dog to eat out of",
+            "price": 20.0,
+            "category": 3,
+            "rating": 3.2,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0430201405053680M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "white-bowl-large.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002910572",
+            "name": "White dog bowl",
+            "description": "White dog bowl for a hungry dog",
+            "price": 26.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81C9387BM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+            "image": "white-bowl.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002990740",
+            "name": "White Jackie Sweater",
+            "description": "Gorgeous white jackie sweater",
+            "price": 48.99,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1029201317111469M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "white-full-size-min.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003050248",
+            "name": "Yellow frisbee",
+            "description": "Yellow dog frisbee",
+            "price": 65.99,
+            "category": 6,
+            "rating": 4.4,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "yellow-frisbee.jpg"
+        }
+    }
+]
+    
