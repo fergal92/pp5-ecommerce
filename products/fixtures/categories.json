@@ -2,56 +2,56 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "clothes",
-            "friendly_name": "Activewear"
+            "name": "sweaters",
+            "friendly_name": "Sweaters"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "accessories",
-            "friendly_name": "Bed & Bath"
+            "name": "raincoats",
+            "friendly_name": "Raincoats"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "clearance",
-            "friendly_name": "Clearance"
+            "name": "bowls",
+            "friendly_name": "Bowls"
         }
     },
     {
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "deals",
-            "friendly_name": "Deals"
+            "name": "toiletries",
+            "friendly_name": "Toiletries"
         }
     },
     {
         "pk": 5,
         "model": "products.category",
         "fields": {
-            "name": "toys",
-            "friendly_name": "Essentials"
+            "name": "kits",
+            "friendly_name": "Kits"
         }
     },
     {
         "pk": 6,
         "model": "products.category",
         "fields": {
-            "name": "beauty",
-            "friendly_name": "Jeans"
+            "name": "food",
+            "friendly_name": "Food"
         }
     },
     {
         "pk": 7,
         "model": "products.category",
         "fields": {
-            "name": "new_arrivals",
-            "friendly_name": "New Arrivals"
+            "name": "toys",
+            "friendly_name": "Toys"
         }
     }
 ]
