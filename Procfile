@@ -1,1 +1,1 @@
-web: gunicorn ecommerce_store.wsgi:application
+web: gunicorn ecommerce_store.wsgi:application --workers=3 --log-level=info
