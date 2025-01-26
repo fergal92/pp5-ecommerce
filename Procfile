@@ -1,1 +1,1 @@
-web: gunicorn pp5-ecommerce.wsgi:application
+web: gunicorn PP5-ECOMMERCE.wsgi:application
