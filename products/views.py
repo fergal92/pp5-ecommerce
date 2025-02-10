@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -59,12 +59,37 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
-
+    """ A view to show individual product details and allow review submission """
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.all()
+    review_form = ReviewForm()
+
+    if request.method == 'POST' and request.user.is_authenticated:
+        # Check if the user has already reviewed this product
+        existing_review = Review.objects.filter(product=product, user=request.user).first()
+
+        if existing_review:
+            # If a review already exists, show a message and don't allow a new one
+            messages.error(request, 'You have already reviewed this product!')
+            return redirect('product_detail', product_id=product.id)
+
+        review_form = ReviewForm(request.POST)
+        
+        # If the form is valid, save the review
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Your review has been submitted!')
+            return redirect('product_detail', product_id=product.id)
+        else:
+            messages.error(request, 'Failed to submit review. Please ensure the form is valid.')
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
