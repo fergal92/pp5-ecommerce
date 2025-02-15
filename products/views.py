@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from checkout.models import Order
+from profiles.models import UserProfile
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
@@ -59,30 +61,49 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
-    """ A view to show individual product details and allow review submission """
+    """ A view to show individual product details """
     product = get_object_or_404(Product, pk=product_id)
     reviews = product.reviews.all()
     review_form = ReviewForm()
 
-    if request.method == 'POST' and request.user.is_authenticated:
-        # Check if the user has already reviewed this product
-        existing_review = Review.objects.filter(product=product, user=request.user).first()
+    # Check if the user has purchased the product
+    has_purchased = False
+    if request.user.is_authenticated:
+        try:
+            user_profile = UserProfile.objects.get(user=request.user)
+            # Check if the user has placed an order that contains this product
+            orders = Order.objects.filter(user_profile=user_profile)
+            for order in orders:
+                if order.lineitems.filter(product=product).exists():
+                    has_purchased = True
+                    break
+        except UserProfile.DoesNotExist:
+            # Handle the case where the profile doesn't exist (unlikely if the profile exists)
+            pass
 
-        if existing_review:
-            # If a review already exists, show a message and don't allow a new one
-            messages.error(request, 'You have already reviewed this product!')
+    # If it's a POST request, save the review
+    if request.method == 'POST' and request.user.is_authenticated:
+        # Check if the user has already submitted a review for this product
+        if Review.objects.filter(product=product, user=request.user).exists():
+            messages.error(request, "You have already submitted a review for this product.")
             return redirect('product_detail', product_id=product.id)
 
         review_form = ReviewForm(request.POST)
-        
-        # If the form is valid, save the review
         if review_form.is_valid():
             review = review_form.save(commit=False)
             review.product = product
             review.user = request.user
             review.save()
             messages.success(request, 'Your review has been submitted!')
-            return redirect('product_detail', product_id=product.id)
+
+            # Instead of redirecting, render the same page with the review
+            return render(request, 'products/product_detail.html', {
+                'product': product,
+                'reviews': product.reviews.all(),  # Reload reviews
+                'review_form': review_form,        # Keep the form to submit a new review
+                'has_purchased': has_purchased,    # Whether the user has purchased the product
+            })
+
         else:
             messages.error(request, 'Failed to submit review. Please ensure the form is valid.')
 
@@ -90,9 +111,11 @@ def product_detail(request, product_id):
         'product': product,
         'reviews': reviews,
         'review_form': review_form,
+        'has_purchased': has_purchased,
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -160,3 +183,41 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+# @login_required
+# def submit_review(request, product_id):
+#     """ A view to submit a review for a product """
+#     product = get_object_or_404(Product, pk=product_id)
+
+#     # Check if the user has purchased the product
+#     has_purchased = False
+#     user_profile = request.user.profile
+#     user_orders = Order.objects.filter(user_profile=user_profile)
+#     for order in user_orders:
+#         if order.products.filter(id=product.id).exists():
+#             has_purchased = True
+#             break
+
+#     if not has_purchased:
+#         return redirect('product_detail', product_id=product.id)
+
+#     # Process the review form
+#     if request.method == 'POST' and 'review_form' in request.POST:
+#         review_form = ReviewForm(request.POST)
+#         if review_form.is_valid():
+#             review = review_form.save(commit=False)
+#             review.product = product
+#             review.user = request.user
+#             review.save()
+#             return redirect('product_detail', product_id=product.id)
+
+#     else:
+#         form = ReviewForm()
+
+#     context = {
+#         'product': product,
+#         'review_form': review_form,
+#     }
+
+#     return render(request, 'products/submit_review.html', context)
