@@ -3,6 +3,20 @@ from .models import UserProfile
 import pycountry
 
 class UserProfileForm(forms.ModelForm):
+    date_of_birth = forms.DateField(
+    required=False,
+    widget=forms.TextInput(
+        attrs={
+            'class': 'border-black rounded-0 profile-form-input',
+            'type': 'text',  # ✅ Changed from "date" to "text"
+            'placeholder': 'Date of Birth',
+            'onfocus': "(this.type='date')",  # When clicked, change to date picker
+            'onblur': "(this.type='text')",  # When not in focus, change back to text
+        }
+    ),
+    label=False,  # Hide label if you only want the placeholder
+)
+
     class Meta:
         model = UserProfile
         exclude = ('user',)
@@ -12,7 +26,6 @@ class UserProfileForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
-                
         super().__init__(*args, **kwargs)
         placeholders = {
             'default_phone_number': 'Phone Number',
@@ -21,9 +34,9 @@ class UserProfileForm(forms.ModelForm):
             'default_town_or_city': 'Town or City',
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
-            'default_county': 'County, Sate or Locality',
+            'default_county': 'County, State or Locality',
+            'date_of_birth': 'Date of Birth'  # ✅ Ensure this placeholder is set
         }
-        
 
         # Generate country choices from pycountry
         countries = [(country.alpha_2, country.name) for country in pycountry.countries]
