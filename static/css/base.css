@@ -209,6 +209,21 @@ footer .social-icons a:hover {
     }
 }
 
+.charity-link a {
+    color: #ff6600;
+    /* Choose a standout color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make it bolder */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.charity-link a:hover {
+    color: #cc3300;
+    /* Change color on hover */
+}
 
 /* ------------------------------- bootstrap toasts */
 
