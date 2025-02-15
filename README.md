@@ -8,14 +8,14 @@ Doggo Down under is a website selling dog products in Australia
 The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9b3087502e.herokuapp.com/).
 
 # Table of Contents
-- [Features](https://github.com/SJECollins/ci-pp5-the-chillibox#features)
-- [Agile Methodology](https://github.com/SJECollins/ci-pp5-the-chillibox#agile-methodology)
-- [Design](https://github.com/SJECollins/ci-pp5-the-chillibox#design)
-- [SEO and Marketing](https://github.com/SJECollins/ci-pp5-the-chillibox#seo-and-marketing)
-- [Technologies Used](https://github.com/SJECollins/ci-pp5-the-chillibox#technologies-used)
-- [Testing](https://github.com/SJECollins/ci-pp5-the-chillibox/blob/main/TESTING.md)
-- [Deployment](https://github.com/SJECollins/ci-pp5-the-chillibox#deployment)
-- [Credits](https://github.com/SJECollins/ci-pp5-the-chillibox#credits)
+- [Features](#features)
+- [Agile Methodology](#agile-methodology)
+- [Design](#design)
+- [SEO and Marketing](#seo-and-marketing)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 
 # Features
@@ -1311,4 +1311,8 @@ The live site can be found here: [The Chillibox](https://ci-pp5-the-chillibox.he
 
 
 ## Acknowledgement
-I'd like to thank my mentor, Brian Macharia, for providing very good advice, tips and feedback, as well as excellent resources that aided greatly in organising and implementing this project.
+- Iuliia Konovalova - My mentor Julia was very supportive during this project. She certainly pushed me to complete a high standard of project especially for the readme and testing sections. I took inspiration from her README.md and TESTING.md files for my own.
+- Happiness Generator - My first hackathon project. I learned so much from participating in this project and team. We won the March hackathon for 2024 and my team members were a great source of inspiration for me.
+- freeCodeCamp - I completed the freeCodeCamp responsive web design module before enrolling in code institute and I learned much from that module that I was able to utilise for this project.
+- CodeInstitute - The learning material produced by code institute has been very high quality and I have learned a lot from it. 
+Boutique Ado - The Boutique Ado app has heavily influnced this project. As it was only the second django project I had seen before and with the complexity of producing a django project for the second time I had to heavily lean on the existing project. A lot of the Doggo Down Under website is taken from the boutique Ado project but I have made enough changes to it to create a unique standalone project.
