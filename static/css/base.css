@@ -386,6 +386,12 @@ footer .social-icons a:hover {
     border-radius: 0;
 }
 
+@media (min-width: 320px) {
+    .header-container {
+        padding-bottom: 200px;
+    }
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -396,7 +402,4 @@ footer .social-icons a:hover {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
 }
