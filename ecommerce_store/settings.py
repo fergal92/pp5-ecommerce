@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'list',
+    'email_subscribers',
     'django_countries',
     'profiles',
     

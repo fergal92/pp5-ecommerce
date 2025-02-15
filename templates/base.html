@@ -160,12 +160,12 @@
     </script>
     {% endblock %}
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
+    <footer class="py-4 text-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <h5 class="text-center">Subscribe to Our Newsletter</h5>
-                    <form action="{% url 'newsletter_signup' %}" method="POST">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form class='signup-form' action="{% url 'newsletter_signup' %}" method="POST">
                         {% csrf_token %}
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" placeholder="Enter your email"
@@ -173,6 +173,12 @@
                         </div>
                         <button type="submit" class="btn btn-info btn-block">Subscribe</button>
                     </form>
+
+                    <!-- Social Media Icons Below Signup Form -->
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+                        <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    </div>
                 </div>
             </div>
         </div>
