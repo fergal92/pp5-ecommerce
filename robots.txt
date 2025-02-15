@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: 
+Sitemap: https://doggo-down-under-1b9b3087502e.herokuapp.com/Sitemap.xml

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/bag/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=sweaters</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=raincoats</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=sweaters,raincoats</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=bowls</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=toiletries</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=kits</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=food</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=toys</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/products/?category=bowls,toiletries,kits,food,toys</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://doggo-down-under-1b9b3087502e.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-02-15T20:21:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
