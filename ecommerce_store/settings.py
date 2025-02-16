@@ -29,7 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com','8000-fergal92-pp5ecommerce-ff0vcg2m6qt.ws.codeinstitute-ide.net', '127.0.0.1']
+ALLOWED_HOSTS = [
+    '.herokuapp.com',
+    '8000-fergal92-pp5ecommerce-ff0vcg2m6qt.ws.codeinstitute-ide.net',
+    '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-fergal92-pp5ecommerce-ff0vcg2m6qt.ws.codeinstitute-ide.net'
@@ -56,7 +59,7 @@ INSTALLED_APPS = [
     'email_subscribers',
     'django_countries',
     'profiles',
-    
+
     # other
     'crispy_forms',
     'storages',
@@ -82,13 +85,13 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates' 'allauth'),            
+            os.path.join(BASE_DIR, 'templates' 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -190,7 +193,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'doggo-down-under'
     AWS_S3_REGION_NAME = 'eu-north-1'

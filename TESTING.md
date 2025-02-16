@@ -121,4 +121,23 @@ This document outlines the testing results for various features of the **Doggo D
 
 ---
 
+## **Validation**
+
+All code was passed through respective validators and passed.
+
+### HTML
+![HTML Validation](static/images/readme/html-validation.png)
+### CSS
+![CSS Validation](static/images/readme/css-validation.png)
+### Python
+![Python Validation](static/images/readme/pep8-validation.png)
+
+---
+
+## **Responsiveness**
+Responsivity was checked on all screen sizes and chrome, firefox and edge
+![Responsive View](static/images/readme/responsive-doggo-down-under.png)
+
+---
+
 End of testing report.

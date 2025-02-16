@@ -2,6 +2,7 @@ from django import forms
 from .models import Order
 import pycountry
 
+
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -15,7 +16,7 @@ class OrderForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
-                
+
         super().__init__(*args, **kwargs)
         placeholders = {
             'full_name': 'Full Name',
@@ -28,10 +29,10 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address 2',
             'county': 'County, Sate or Locality',
         }
-        
 
         # Generate country choices from pycountry
-        countries = [(country.alpha_2, country.name) for country in pycountry.countries]
+        countries = [(country.alpha_2, country.name)
+                    for country in pycountry.countries]
         self.fields['country'].choices = [('', 'Select a country')] + countries
 
         self.fields['full_name'].widget.attrs['autofocus'] = True

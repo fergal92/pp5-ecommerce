@@ -2,20 +2,23 @@ from django import forms
 from .models import UserProfile
 import pycountry
 
+
 class UserProfileForm(forms.ModelForm):
     date_of_birth = forms.DateField(
-    required=False,
-    widget=forms.TextInput(
-        attrs={
-            'class': 'border-black rounded-0 profile-form-input',
-            'type': 'text',  # ✅ Changed from "date" to "text"
-            'placeholder': 'Date of Birth',
-            'onfocus': "(this.type='date')",  # When clicked, change to date picker
-            'onblur': "(this.type='text')",  # When not in focus, change back to text
-        }
-    ),
-    label=False,  # Hide label if you only want the placeholder
-)
+        required=False,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'border-black rounded-0 profile-form-input',
+                'type': 'text',  # ✅ Changed from "date" to "text"
+                'placeholder': 'Date of Birth',
+                # When clicked, change to date picker
+                'onfocus': "(this.type='date')",
+                # When not in focus, change back to text
+                'onblur': "(this.type='text')",
+            }
+        ),
+        label=False,  # Hide label if you only want the placeholder
+    )
 
     class Meta:
         model = UserProfile
@@ -39,8 +42,10 @@ class UserProfileForm(forms.ModelForm):
         }
 
         # Generate country choices from pycountry
-        countries = [(country.alpha_2, country.name) for country in pycountry.countries]
-        self.fields['default_country'].choices = [('', 'Select a country')] + countries
+        countries = [(country.alpha_2, country.name)
+                    for country in pycountry.countries]
+        self.fields['default_country'].choices = [
+            ('', 'Select a country')] + countries
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:

@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='image',
-            field=cloudinary.models.CloudinaryField(blank=True, max_length=255, null=True, verbose_name='image'),
+            field=cloudinary.models.CloudinaryField(
+                blank=True, max_length=255, null=True, verbose_name='image'),
         ),
     ]

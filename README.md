@@ -3,7 +3,7 @@
 Doggo Down under is a website selling dog products in Australia. It allwos users to purchase a wide range of dog products. Users can search for products via name, category and product description, users can filter based on price and rating. User experience and mobile development is at the heart of Doggo Down Under and users who want to purcahse dog products will have a great experience using this website.
 
 
-![Doggo Down Under](static/images/readme/homepage-laptop.png)
+![Doggo Down Under](static/images/readme/responsive-doggo-down-under.png)
 
 The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9b3087502e.herokuapp.com/).
 
