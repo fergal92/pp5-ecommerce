@@ -111,7 +111,7 @@
                     <button type="submit" class="btn btn-primary">Add to Wishlist</button>
                 </form>
                 {% else %}
-                <p><a href="{% url 'login' %}">Login to add to wishlist</a></p>
+                <p><a href="{% url 'account_login' %}">Login to add to wishlist</a></p>
                 {% endif %}
 
                 {% if user.is_authenticated %}
@@ -126,7 +126,7 @@
                 <p>You must have purchased this item before leaving a review.</p>
                 {% endif %}
                 {% else %}
-                <p><a href="{% url 'login' %}">Log in</a> to leave a review.</p>
+                <p><a href="{% url 'account_login' %}">Log in</a> to leave a review.</p>
                 {% endif %}
 
                 <h3>Reviews</h3>

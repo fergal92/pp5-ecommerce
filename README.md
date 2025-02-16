@@ -58,80 +58,37 @@ It also includes a link to a popular dog charity in AUstralia for further readin
 <details>
 <summary>Index Page</summary>
 
-![Index](readme-docs/screens/index.webp)
+![Index](static/images/readme/homepage-laptop.png)
 </details>
 
-The index or home page appears the same for all users. It features a carousel at the top of the page, visible to the user immediately upon landing on home page. The carousel currently includes three images. The first is a simple hero image with the business's name. The second is an image that advertises the hot sauce products with a link to the page. And the third is an image advertising the chilli plant seeds with a link to that page. Immediately below the carousel is the website's welcome message for the user.
-
-The next section of the site includes text that briefly introduces the products available to the user on the website. Each short paragraph includes an inline link to the category it is referencing. 
-
-And finally, at the bottom of the index page is a section for the "Newest Products" on the website. This section features four of the products most recently added to the website. They are displayed in "cards" with a thumbnail of the product, a short excerpt of the product's description, its stock status and the product's name as a link to its page.
+The index or home page appears the same for all users. It features a hero image of a cute dog with a jumper on, visible to the user immediately upon landing on home page. The carousel currently includes three images. There is a call to action on the hero image to entice the user to browse the shop collection.
 
 Overall, the index page is intended to be engaging, informative without overwhelming the customer, and to encourage the user to explore the website further.
-
-
 
 ### Products
 
 This section discusses the features related to the products app. 
 
-#### Product Card
-<details>
-<summary>Product Card</summary>
-
-![Product Card](readme-docs/screens/product_card.webp)
-</details>
-
-A feature used in "Newest Products", "Latest Products" and on the category pages, a product "card" has a box shadow to contain and highlight the individual product. The card features a simple summary of the products details: the name, a thumbnail image, a short excerpt of the product description, the product's stock status and a link to go to the product page. 
-
-The intention behind displaying products like this in the sections mentioned above was partly inspired by the [Bootstrap Card](https://getbootstrap.com/docs/5.0/components/card/) element and to limit the information provided for products outside of the product detail page. Only the most essential information needs to be available. The name is obviously important, especialy if it is what the user is searching for. The image is present to draw the user in visually and the excerpt to try to catch the user's attention. The stock information is obviously important as you don't want the user to go to the product page only to find it out of stock, which would be frustrating. And then, of course, the link so the user can access the product page.
-
-Some consideration was put into a "Quick Add" feature for users on the card, but as most products have different variants it was decided to forgo that feature currently.
-
-
-#### Newest Products
-<details>
-<summary>Newest Products</summary>
-
-![Newest Products](readme-docs/screens/newest_products.webp)
-</details>
-
-The most immediate area of the website related to products is the "Newest Products" section on the index page. As described in the "Index Page" feature description above, it displays four of the products most recently added to the website. Its intention is to highlight recently added products, to push them to the front of customers' minds. Users may come to the site with a particular products in mind, but hopefully by advertising newer products on the home page it will encourage users to look at these products as well. For regular users who may be visiting the site for reasons other than an immediate purchase (e.g. browsing, reading recipes) the hope is that they would take a quick look at the "Newest Products" when they visit and find something new they are interested in.
-
-The products are displayed in "Product Cards" which are discussed in the section of the same name above.
-
 #### Search Products
 <details>
 <summary>Search Products</summary>
 
-![Search Products](readme-docs/screens/search.webp)
+![Search Products](static/images/readme/navbar-laptop.png)
 </details>
 
 The search form in the navbar has basic search functionality. It searches for matches in the product names and description and returns the results displayed as product cards. At the top of the page it informs the user of the number of products found that match the query and includes the query in the result so the user can be sure of what they searched.
-
-
-#### Latest Products
-<details>
-<summary>Latest Products</summary>
-
-![Latest Products](readme-docs/screens/latest_products.webp)
-</details>
-
-Similar to the "Newest Products" section of the index page, the first link under "Shop" is "Latest Products". And like the "Newest Products", this page displays four of the most recently added products, but in each category so a broader range of products may be featured. Again, the intention is to highlight recently added products to give them a boost. While it would be possible to filter individual category pages to display by recently added, and may be necessary in the future if the number of categories were to grow, the latest product page allows the user to simply click a link and view recently added products in all categories on one page. 
-
-The products are displayed in "Product Cards" which are discussed in the section of the same name above.
 
 
 #### Categories
 <details>
 <summary>Categories</summary>
 
-![Categories](readme-docs/screens/category.webp)
+![Categories](static/images/readme/navbar-laptop.png)
 </details>
 
-The category pages are featured on the "Shop" drop down menu on the navbar. There is a link for each category - "Seeds", "Sauces", "Seedboxes" and "Sauceboxes". 
+The category pages are featured on the "Shop" drop down menu on the navbar. There is a link for each category - Sweaters, Raincoats, Bowls, Toiletries, Kits, Food, Toys. There is a link for all clothing and all accessories too
 
-There is a single, simple category template that is used for every category page so that all of these pages have the same layout and are easy to understand for the user. The layout is very simple, the products are displayed in "Product Cards" as described in the section of the same name above, in rows of up to four on larger screens.
+There is a single, simple category template that is used for every category page so that all of these pages have the same layout and are easy to understand for the user. The layout is very simple, the products are displayed in "Product Cards".
 
 There is a simple filter functionality on the category pages which filters the page by subcategory. Almost all products fall within one of "Mild", "Medium", "Hot", and "Mega Hot" subcategories which the user can filter by selecting the subcategory from the drop down menu and clicking "Go".
 
@@ -140,111 +97,27 @@ There is a simple filter functionality on the category pages which filters the p
 <details>
 <summary>Product Page</summary>
 
-![Product Page](readme-docs/screens/product_page.webp)
+![Product Page](static/images/readme/product-detail-page.png)
 </details>
 
 The product detail page has two main sections, the second of which is the product reviews and is discussed in more detail later on in the "Reviews" features.
 
-The first section on this page features all of the products details. The template used for this page is used for all products so that all product detail pages have a similar layout. Similarly, one product model is used for all products with the choice of fields used depending on the type of product. For example, a basic seed product does not require the "ingredients" field to be filled out and, likewise, a hot sauce does not need "growth time". So, the template uses multiple if statements within tables to display a very similar layout for all products to keep a uniform look to the website.
+The first section on this page features all of the products details. The template used for this page is used for all products so that all product detail pages have a similar layout. Similarly, one product model is used for all products with the choice of fields used depending on the type of product.
 
-The first part of the product detail page is the section including the product name, the product image and the product description. Then we have the product's details in a table, which includes different information depending on which type of product the user is viewing. This table may include: the product category, heat level, growth time, ingredients, box contents, box in which the product appears, and rating. These details are dependent on factors such as the type of product, whether it has been reviewed, and whether the staff member who entered the product remembered to fill in the field.
-
-The final part of this section of the product detail page is the "Add To Cart" form, which will be discussed in more detail in "Product Variants" and "Cart" features below. Briefly, it allows the user to select which variant of the product they wish to purchase, the quantity, and to add it to their card.
+A pcture of the product is displayed along with the product, name, price, category, rating, description, quantity selectyor, option to add to bag, option to keep shopping, option to add to wishlist, and a reviews section. The review form is only avalible to users who have previously purchased the product. Any reviews already written can be read at the bottom of this page.
 
 
-#### Product Variants
-<details>
-<summary>Variants</summary>
+### Shopping bag
 
-![Variants](readme-docs/screens/variants.webp)
-</details>
-
-The product's variants are displayed twice on the product detail page. First in the product details table with the heading "Options" and then in the "Select Option" drop down menu in the "Add To Cart" form element. 
-
-The variant model is related to the product model in a one-to-many relationship where each product can have multiple variants for the user to choose from. Where the product model holds the basic information for each product on the site, the related variant model allows for management of options, prices and stock for products. 
-
-When a user selects a variant in the "Add To Cart" form element, the current stock of that variant of the product is then displayed for the user.
-
-
-#### Box Contents
-<details>
-<summary>Box Contents</summary>
-
-![Box Contents](readme-docs/screens/box_contents.webp)
-</details>
-
-"Box contents" is a field in the product model which is used for seedboxes and sauceboxes. It is a many-to-many field related to "self", meaning the product model itself, so that a seedbox contains many seed products, for exmaple.
-
-On a box product page, the products included are shown in the product detail table with the heading "Contents". These are the products the user will receive if they order the box. And then the variants of this box products manages the sizes of the included products and the price of the box, like other products.
-
-If a product is included in a box, when you visit that product's page you will see a line in the table called "Find in" which indicates which box that product is included in. An example of this can be seen in the image above in "Product Variants".
-
-
-### Cart
-
-This section discusses the features associated with the cart app and the functionality involved with managing the user's cart.
-
-#### Add To Cart
-<details>
-<summary>Product Added</summary>
-
-![Product Added](readme-docs/screens/product_added.webp)
-</details>
-
-The "Add To Cart" functionality of the product detail page is one of the most important features of the website, as expected of an e-commerce site. As previously mentioned in the section about "Product Variants", the form element for adding a product to the cart is dependent on the user selecting a variant of the product.
-
-Prior to selecting an option, the "Add To Cart" button is disabled to prevent the user from submitting the form erroneously. This is controlled through a simple event listener in the javascript calling a function that enables/disables the button depending on whether the user has selected the "Select an option" option in the drop down menu. When the user selects a product variant to add to the cart, the button is then activated and the user is able to add the variant they selected to their cart, depending on availability.
-```
-    const addBtn = document.getElementById("add")  # Where "add" is the button id
-    function updateStock() {
-        currentStock = stock.textContent
-        if (currentStock == "") {
-            addBtn.disabled = true
-            warning.style.display = "none"
-        } else if (currentStock <= 0) {
-            quantity.textContent = 0
-            warning.style.display = "block"
-            addBtn.disabled = true
-        } else {
-            quantity.textContent = 1
-            warning.style.display = "none"
-            addBtn.disabled = false
-        }        
-    }
-```
-Also, when the user selects a variant in that drop down menu, the "Stock" field in the form element is then filled with the current stock of that variant of the product. The quantity of that variant that the user is able to add to their cart is dependent on the stock available, which is plainly visible to the user. 
-<details>
-<summary>Add Max To cart</summary>
-
-![Add Max](readme-docs/screens/not_available.webp)
-</details>
-
-When a variant is initially in stock and the user then goes to add the maximum available to their cart, the quantity buttons disable when they reach the limit (there is also functionality in place to prevent the user selecting a quantity below 0). At the same time, a message is displayed below the quantity field to alert the user in case they do not realise they have reached the limit and that there are no more available.
+This section discusses the features associated with the bag app and the functionality involved with managing the user's shopping bag.
 
 <details>
-<summary>Not Available</summary>
+<summary>Shopping bag</summary>
 
-![Not Available](readme-docs/screens/unavailable.webp)
+![Product Added](static/images/readme/shopping-bag-page.png)
 </details>
 
-If a user selects away from this option after adding to cart and then selects it again or comes across a variant on another product that is not in stock, when they select that variant the stock field displays "0", the select quantity field displays "0", they are unable to change the quantity, the "No more available" message is displayed and the "Add To Cart" functionality is disabled.
-
-The ability to alter functionality of the "Add To Cart" form element based on user selections in vanilla JavaScript is achieved through the use of a MutationObserver as based on code from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
-```
-    const config = { childList: true }
-    const callback = (mutationList, observer) => {
-        for (const mutation of mutationList) {
-            if (mutation.type === 'childList') {
-                updateStock()
-                } else {
-                console.log(mutation.type)
-            }
-        }
-    }
-    const observer = new MutationObserver(callback)
-    observer.observe(stock, config)
-```
-Stock has been mentioned quite a bit in this section, but for brevity will be discussed later in the "Stock" section of the "Management" features.
+The shopping bag allows the user to add products from the products pages into the shopping bag. Once in the bag the user can then proceed to checkout from there and purchase the products. The bag features a product image, name, SKU, price, quanity selector and the subtotal of all the items in the bag. The delivery cost is also displayed. There are two buttons to allow the user to continue shopping or to checkout. Products can be removed from the bag as well as increasing or decreasing the number in the bag.
 
 
 ### Purchasing
@@ -253,123 +126,38 @@ This section discusses the features related to the checkout app and the function
 
 #### Checkout
 <details>
-<summary>Checkout Empty Form</summary>
+<summary>Checkout</summary>
 
-![Checkout](readme-docs/screens/checkout_empty.webp)
+![Checkout](static/images/readme/checkout-page.png)
 </details>
 
 To reach the checkout page, the user can click on the link in the cart offcanvas element or on the "Checkout" button below the summary table on the cart page.
 
-The checkout page has two sections. To the left or on top, depending on the size of the user's device, is the summary of the order. Similarly to the cart page, this summary is a simple table listing the most relevant details of the items in the order. It includes small thumbnails of the items as well as the name just to be clear to the user what they are purchasing. Below this is the delivery cost and grand total.
+The checkout page has two sections. To the right or on top, depending on the size of the user's device, is the summary of the order. Similarly to the cart page, this summary is a simple table listing the most relevant details of the items in the order. It includes small thumbnails of the items as well as the name just to be clear to the user what they are purchasing. Below this is the delivery cost and grand total.
 
-On the right of or below the order summary, is the form for delivery details. It appears slightly differently depending on whether the user is logged in or not, and whether their details are already saved. For a guest user the form will appear blank. If the user is logged in but has not saved their details previously, the email field will be prepopulated and at the bottom of the form is an option to save their details to their profile.
+On the left of or below the order summary, is the form for delivery details. It appears slightly differently depending on whether the user is logged in or not, and whether their details are already saved. For a guest user the form will appear blank. If the user is logged in but has not saved their details previously, the email field will be prepopulated and at the bottom of the form is an option to save their details to their profile.
 
-<details>
-<summary>Checkout Filled Form</summary>
-
-![Checkout Filled](readme-docs/screens/checkout_filled.webp)
-</details>
-
-If the user has previously had their details saved to their profile, these details will be prepopulated in the form fields when the user loads the checkout page. Any changes the user makes to their details in the form can be saved by selecting the save option when they submit the form
-
-Directly below the delivery details is the [Stripe](https://stripe.com) card element where the user inputs their card details to complete the order.
-
-Before the submit button, there is a warning to the user stating how much money their card is about to be charged.
+Directly below the delivery details is the [Stripe](https://stripe.com) card element where the user inputs their card details to complete the order. Before the submit button, there is a warning to the user stating how much money their card is about to be charged.
 
 For the delivery form and Stripe elements, the code is based on Code Institute's [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) project.
 
 
-#### Complete Order
-<details>
-<summary>Checkout Success</summary>
-
-![Checkout Success](readme-docs/screens/checkout_success.webp)
-</details>
-
-When the user completes their order successfully, they are brought to the checkout success page which summarises the details of their order and their delivery details.
-A success message is displayed on the top of the page which notifies the user of their order number and that a confirmation email will be sent to the email they provided on the delivery form.
-
-Just below the "We have your order" message at the top of the page, there is a link for the user to download a PDF copy of their order so that they can print a simple hardcopy.
-
-
-#### Order Confirmation
-![Order Confirmation Subject](readme-docs/screens/order_confirm_email_line.webp)
-<details>
-<summary>Order Confirmation Email</summary>
-
-![Order Email](readme-docs/screens/order_confirm_email_body.webp)
-</details>
-
-Using Stripe webhooks based on the Code Institute [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) project, when a user submits their order a confirmation email is then sent to the user with their payment and delivery details.
-
-
-#### Order PDF
-
-The PDF of the user's order is created using [Reportlab](https://docs.djangoproject.com/en/4.1/howto/outputting-pdf/). It generates a very simple summary of the user's order, not unlike the confirmation email, except that the items the user ordered are also listed in the summary. The intention is to provide a convenient method for the user to download or print a copy of all the relevant details of their order.
-
-
 ### User Authentication and Profiles
 
-This section discusses features related to the user authentication, and user profiles and reviews in the profiles app.
+This section discusses features related to the user authentication, and user profiles.
 
 #### Registration
 <details>
 <summary>Register</summary>
 
-![Register](readme-docs/screens/register.webp)
+![Register](static/images/readme/profile-page.png)
 </details>
 
 [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) was used for user authentication for this website and so functionality for registration and authentication is handled by allauth. The templates used for registration, login/logout, and email confirmation are allauth templates which have been styled to match the rest of the website.
 
-Registration is accessed through the "Register" link under the "Account" drop down menu and is unnecessary for most functionality on the website. A user can complete a purchase and generate a successful order without registering. Most functionality that requires registration is secondary to the purpose of the site and related to customer engagement and retention.
-
-Above is the registration form. Once successfully completed, the user is redirected to the page in the image below where they are informed that a verification has been sent to their email address.
-
-<details>
-<summary>Verification Sent</summary>
-
-![Verification Sent](readme-docs/screens/verify_sent.webp)
-</details>
-
-![Verification Inbox](readme-docs/screens/verify_email_inbox.webp)
-<details>
-<summary>Verification Email</summary>
-
-![Verification Email](readme-docs/screens/verify_email.webp)
-</details>
-
-Following the link in the email above, the user is brought to the confirmation page where they can confirm their email address and then are able to login to their profile. When a user successful registers with the site and logs in for the first time, a user profile is created for them in a one-to-one relationship.
-
-<details>
-<summary>Confirm Email</summary>
-
-![Confirm Email](readme-docs/screens/confirm_email.webp)
-</details>
-<details>
-<summary>Email Confirmed</summary>
-
-![Login Confirmed](readme-docs/screens/login_confirmed.webp)
-</details>
-
-
-#### Login
-<details>
-<summary>Login</summary>
-
-![Login](readme-docs/screens/login.webp)
-</details>
+Registration is accessed through the "Register" link under the "Account" drop down menu and is unnecessary for most functionality on the website. A user can complete a purchase and generate a successful order without registering.
 
 The login page is accessed through a "Login" link under the "Account" drop down menu and the template is standard from allauth and accepts either the user's username or email and their password as valid credentials to login. 
-
-Upon logging in, the user is redirected to their user profile.
-
-
-#### Logout
-<details>
-<summary>Logout</summary>
-
-![Logout](readme-docs/screens/logout.webp)
-</details>
 
 When a user is logged in, the log out page is accessed through a "Logout" link under the "Account" drop down menu. Again, this is a standard allauth template styled to match the rest of the website.
 
@@ -378,7 +166,7 @@ When a user is logged in, the log out page is accessed through a "Logout" link u
 <details>
 <summary>User Profile</summary>
 
-![Profile](readme-docs/screens/user_profile.webp)
+![Profile](static/images/readme/profile-page.png)
 </details>
 
 User profiles are created automatically when a user registers with the website, as based off of the code from Code Institute's [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) project. When a user logs in, they are redirected to their profile.
@@ -387,217 +175,43 @@ The main page of the user profile includes a section for the user's details and 
 
 The order history table summarises their orders with their order number, the date it was placed, the total and a link to the checkout success page for that order so that they can review it in more detail there.
 
-There are two links below the "Your Profile" heading at the top of the page. One link brings the user to the page containing their reviews and the other links to the page where they can manage their submitted recipes.
-
-
-#### Your Reviews
-<details>
-<summary>User Reviews</summary>
-
-![User Reviews](readme-docs/screens/user_reviews.webp)
-</details>
-
-"Your Reviews" on a user's profile is a page which contains a list of the reviews that the user has left on products. A user can leave a review anonymously, but there are certain features related to reviews which require a user to be logged in. One of these is the ability to access this history of their reviews.
-
-This page displays each review with all relevant details. It states which product the review is for and links to that product page. It states the date of the review, the body of the review and the rating which the user left. There are also options to edit or delete the review. The user can also edit or delete their reviews directly in the review section of the product's detail page. This functionality is only available to registered users.
-
-
-#### Your Recipes
-<details>
-<summary>User Recipes</summary>
-
-![User Recipes](readme-docs/screens/user_recipes.webp)
-</details>
-
-On the "Your Recipes" page the user is able to submit a recipe for the website to consider for publication and view a list of the recipes that they have submitted already.
-
-User submitted recipes are not published directly by the website. User's are given a simple form with which to submit the recipe, but if the website chooses to publish the submitted recipe they will do so through their own recipe page in the "Management" section. This area in the user profile provides a way for user's to suggest recipes to the site to encourage engagement.
-
-If the website chooses to use a submitted recipe, they will mark it as published and a message will appear on this page next to the recipe. 
-
-In future this area of the user profile could be expanded to include a section where the user can save their favourite recipes from the website.
-
 
 #### Product Reviews
 <details>
-<summary>No Product Reviews</summary>
+<summary>Product Reviews</summary>
 
-![No Reviews](readme-docs/screens/review_none.webp)
+![No Reviews](static/images/readme/review-form.png)
 </details>
 
-<details>
-<summary>Product Review</summary>
-
-![Review](readme-docs/screens/approved_review.webp)
-</details>
-
-The product detail page features a review form which user's can complete to submit a review and rating for a product. The user does not need to be registered to do so, but if they are not they cannot edit or delete their reviews after they have been published.
-
-When a user submits a review, a message is displayed thanking the user for submitting the review but it is not displayed immediately. Reviews require moderation and have to be approved from the "Management" section of the website. Once approved, the review will be displayed on the product page.
-
-If a user is logged in when looking at their own review on the product page, the options for edit and delete are present on the review they submitted. For an admin user, the option to delete a review is always present on all reviews.
-
-
-#### Product Ratings
-![Rating](readme-docs/screens/rating.webp)
-
-On each review that is submitted for a product, the individual rating that a user submitted is displayed. The average for all of these submitted ratings is then taken and displayed on the product's detail table.
+Once a user has purchased a product and it is in their order history they are able to see a review form on the product detail page. They can write a text review and submit it. Once a user has left a review they cannot leave another review. All website users can read any review on the product detail page. 
 
 
 ### Management
 
-This section discusses features related to the management app. A lot of the features discussed here relate to other apps in the project where their functionality is accessed through the management app by staff.
-
-The management section or dashboard of the website is only accessible to site user who are staff. This section of the website contains functionality related to product and recipe management and user moderation. Similar functionality is available to admin users through the admin panel, however this management dashboard allows staff to perform basic management tasks without having to leave the main website.
-
-To prevent non-staff users from accessing the management dashboard the link only appears in the "Account" drop down menu for user's who are staff, and there is a simple mixin - the StaffRequiredMixin - that leverages Django's LoginRequiredMixin and UserPassesTestMixin for the management views in case users try to manually enter the url.
-```
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-
-
-class StaffRequiredMixin(LoginRequiredMixin, UserPassesTestMixin):
-    def test_func(self):
-        return self.request.user.is_staff
-```
+Superusers can access a product management feature through the nav bar. This allows super users to add new products including images without having to use the admin panel. Super users can also edit and delete current products from the product card. 
 
 #### Products
 <details>
 <summary>Management Products</summary>
 
-![Management Products](readme-docs/screens/management_products.webp)
+![Management Products](static/images/readme/product-management-page.png)
 </details>
-
-The product dashboard is the first page that the staff user will arrive on when they access the management. Immediately at the top of the page, below the "Products" heading is a button to "Add New Product" which allows the user to add new products to the website.
-
-The bulk of this dashboard are tables of the products on the website. These tables are best displayed on large screens, but do function on small devices. However there is a disclaimer on smaller screens that warns that the page is better suited to large screens.
-
-These product tables are grouped by category and then subcategory. For example, within the Seeds category, you will find a table for Mild Seeds which will include all the seeds whose subcategory is mild. The number of products within each category and subcategory is visible for the user.
-
-Within each table, there is minimal information for the product as the focus is on functionality. A typical product entry will include a name which links to the product's page, whether the thumbnail is present or not (as this also tells us if the product has an image unless something has gone wrong), then options to "Edit" the product, "Delete" the product, "Add" a variant, and view the variants.
-
-If no variants are present, this is indicated on the table when the product's variants are toggled to visible. Variants can be added by clicking "Add" under the variant heading for a product. When variants are present their details include the "Size", "Price", and "Stock", and options to "Update Stock", "Edit" and "Delete" the variant.
-
-From this table, the user is able to perform basic CRUD functions for the products and variants on the website, which is the aim of this section of the website. However, for each product on the website the options to "Edit" and "Delete" are also available on other pages for staff members. For example, if a user is a logged in as staff when they view the product detail page, below the description there are options to "Edit" and "Delete" the product. These options, particularly to edit, are available here in case the staff member is viewing the product page and notices a simple error like a typo and so does not need to return to the management dashboard to correct this.
-
-
-#### Stock
-<details>
-<summary>Management Stock</summary>
-
-![Management Stock](readme-docs/screens/management_stock.webp)
-</details>
-
-On the products page of the management dashboard, staff users can adjust the stock for variants by clicking "Update Stock" in the table. This opens a modal with a single field for the user to enter the stock. They can then see the new stock under the "Stock" heading in the table.
-
-This variant stock can be managed here in the management dashboard by manually altering the stock field, but throughout the rest of the website stock is mainly managed by models and functions in the cart app. When a user adds a product to their cart, the item is also added to the HeldCart and HeldItems model in a similar way to the cart in their session. The quantity of the item is also added and the quantity of stock available for purchase is then reduced by this amount.
-
-There is a time limit for how long users can hold items in their cart. This is to prevent stock from being added to a cart, reducing the amount of available stock for other users, then abandoning their cart and having the stock disappear from the database. How this is prevented is that user's have a two hour window to checkout from the time they last added an item to their cart. When the user reaches the end of this two hour window without checking out, the items are removed from their cart and restocked.
-
-The held cart objects are tied to the user's session cart via the session key. This tethers the held cart object to the session cart without having the user needing to have an account and prevents duplicate carts. If a user is to log in or out, the session key is changed and the held cart is then left to count down to restock the items. A warning is displayed on product pages by the "Add To Cart" button advising users to login before they start shopping.
-
-Restocking abandoned carts is handled by functionality implemented through [APScheduler](https://apscheduler.readthedocs.io/en/3.x/). Within the cart app, there is a simple restock job that checks the cart's time and if it has reached the limit will restock items and delete the held cart.
-```
-def restock():
-    carts = HeldCart.objects.all()
-
-    if carts is not None:
-        for cart in carts:
-            if cart.check_time():
-                for held_item in cart.held_items.all():
-                    variant = Variant.objects.get(id=held_item.variant.id)
-                    variant.current_stock += held_item.qty
-                    held_item.delete()
-                if not cart.held_items.exists():
-                    cart.delete()
-```
-Scheduling of this task is handled within updater.py and runs this function every 15 minutes when the app is running.
-```
-from datetime import datetime
-from apscheduler.schedulers.background import BackgroundScheduler
-from .job import restock
-
-
-def start():
-    scheduler = BackgroundScheduler()
-    scheduler.add_job(restock, 'interval', minutes=15)
-    scheduler.start()
-```
-The implementation of APScheduler for handling this job is based on a tutorial from [Did Coding](https://www.youtube.com/watch?v=Lzy4G1wZ7NQ&ab_channel=DidCoding).
-
-
-#### Reviews
-<details>
-<summary>Management Reviews</summary>
-
-![Management Reviews](readme-docs/screens/management_reviews.webp)
-</details>
-
-In the management dashboard, there are links available at the top of the page to navigate to different pages within the dashboard. One of these navigates to "Reviews" which lists the user reviews.
-
-User reviews are displayed as a list. Each review displays the name of the reviewer (or anonymous), the date of the submitted review, the products reviewed, the rating and the content. Options are available for each review to "Delete" the review or approve it. Once a review has been approved, this status is then displayed.
-
-In the future, it may be beneficial to introduce further classifications for user reviews beyond a boolean of approved or not. Possibly classifications could include "Pending Approval", "Not Approved", and "Approve". However, currently with the option to delete reviews, reviews that are not acceptable can be removed in that way.
-
-
-#### Recipes
-<details>
-<summary>Management Recipes</summary>
-
-![Management Recipes](readme-docs/screens/management_recipe.webp)
-</details>
-
-The recipes section of the management dashboard also includes the submitted recipes and the recipe comments. At the top of the page, beneath the links, is the button to "Add Recipe" which brings the user to the recipe form for submitting recipes to the site. 
-
-The recipes page itself is a list of recipes displayed as a summary. It displays the title linking to the recipe page, the date created, the excerpt from the recipe, and options to "Publish", "Edit" and "Delete" the recipes. When the recipe is published on the website, this option to publish is replaced with a message stating that it has been publish and displays the link to the recipe page.
-
-Staff users can also edit and delete recipes directly from the recipe pages. These options are displayed for users who are logged in and who are staff.
-
-
-#### Submitted Recipes
-<details>
-<summary>Submitted Recipe</summary>
-
-![Submitted Recipes](readme-docs/screens/user_recipe_approve.webp)
-</details>
-
-Within the recipes section of the management dashboard, there is a link to the "Submitted Recipes" page which displays the recipes submitted by users. From this page, the staff users are able to review the submitted recipes and if they are chosen to publish on the website, they can mark them as "Published" to provide feedback to the owner.
-
-The intention is not to directly publish the recipe. From this point, the staff user is expected to add the recipe to the site via the normal route while crediting the original user.
-
-
-#### Comments
-<details>
-<summary>Management Comment</summary>
-
-![Management Comment](readme-docs/screens/management_comments.webp)
-</details>
-
-Also within the recipes section of the management dashboard, is a link to the "Recipe Comments" to allow staff users to manage comments on recipe pages.
-
-In the same way that user reviews are displayed, the user comments display the user who commented, the date it was added, the comment body and options to "Delete" or "Approve" the comment. This section allows for moderation of comments on the recipes as comments are not displayed until approved by a staff member.
-
 
 ### Admin
 
 Most of the functionality available on the main website to staff users is also available through the admin panel. Most models are registered to allow admin users to perform CRUD functionality through the admin panel.
 
-In some cases CRUD functionality is only available through the admin panel. For example, categories are registered with admin but there's no functionality available through the management dashboard on the main site. It was decided that because any addition to categories also may require changes to templates (e.g. navigation links, the latest products template), that it would beyond the scope of an average staff member to make any additions to categories and so this functionality should remain within admin where it can be accessed by an IT person.
-
-Similarly, users and user profiles can be managed through the admin panel, including changing passwords and deleting users, but this functionality is not present on the management dashboard to discourage staff from attempting to manipulate the user database. Users are able to edit their own profile details or delete their account themselves, but these options are available to them through their profile as they have the right to manage their own personal information.
-
 
 ### Future Features
 
-1. __Improved Stock Management__:
-  - Stock management can be improved to allow users more control over their cart. Users could be allowed to keep their carts when logging, or, when logged in, be allowed to save their cart for a period of time.
-2. __Order Again__:
+1. __Order Again__:
   - For registered users you could offer an "Order Again" button for items in their order history. This could be as simple as clicking the button and adding the item to their cart like on a product page, with the function only having to check whether it is in stock or not.
-3. __Improved Category Filtering__: 
+2. __Improved Category Filtering__: 
   - Expanding category filtering beyond subcategory could include filtering by average user rating or popularity, if we were to expand the product model to track the number sold.
-4. __Plant Care Blog__:
-  - As part of marketing and providing content to users, a plant care blog may could expand the site further beyond products, giving users another reason to return to the site between purchases.
-5. __Expanded Product Range__:
-  - Providing products beyond seeds and sauces. Expanding the range to include items related to plant care or cooking could draw more users, and repeat users. This may require altering the current product models. 
+3. __Dog Care Blog__:
+  - As part of marketing and providing content to users, a dog care blog may could expand the site further beyond products, giving users another reason to return to the site between purchases.
+4. __Expanded Product Range__:
+  - Providing products beyond dog items. Expanding the range to include items related to other animals could draw more users, and repeat users. This may require altering the current product models. 
 
 
 ## Agile Methodology
@@ -743,74 +357,198 @@ Below are the Epics and their User Stories used to shape the creation of the pro
 
 ### Colour
 
-The colour palette used for the website based on the central red which was colour picked from the main image used on the carousel on the index page. From there, colours were chosen to compliment or contrast, selecting for legibility, simplicity and to stay with the chilli pepper theme. 
-
-<details>
-<summary>Colour Palette</summary>
-
-![Colour Palette](readme-docs/mockups/palette.webp)
-</details>
+The colour palette used for the website based on the classic look of other ecommerce stores like Amazon. Black and white are the primary colours and afford good contrast. The hero picture is a striking yellow background which provides great contrast against the rest of the site. The site is simple and elegant in colour design.
 
 ### Mockups
 
-Initially, the project idea came about during planning for a previous project and mockups were created then. At that stage the project was put aside in favour of another idea that better fit the requirements. At the time, the project was proposed as a subscription box service. It has since changed but the design of the website still shares some similarities visually with the intial mockups.
-
-<details>
-<summary>Mock Up One</summary>
-
-![Mock Up One](readme-docs/mockups/mockup_one.webp)
-</details>
-
-<details>
-<summary>Mock Up Two</summary>
-
-![Mock Up Two](readme-docs/mockups/mockup_two.webp)
-</details>
+I had previously created a website with the idea of dropshipping dog colthes. The website was created through wordpress and some of the original feautures of that website are present in this site such as the favicons.
 
 ### Wireframes
 
-Wireframes were created in Balsamiq. They were used for initial planning for the layout of the website.
+Wireframes were created in ascii style.
 
 <details>
 <summary>Index</summary>
 
-![Index](readme-docs/mockups/index.png)
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist | Bag 🛒 🔍   |
++-----------------------------------------------------------------------+
+|                               HERO IMAGE                              |
+|                     "Premium Aussie Dog Products!"                    |
+|                            [SHOP NOW BUTTON]                          |
++-----------------------------------------------------------------------+
+| [Product Card 1]    [Product Card 2]    [Product Card 3]    [Product 4]  
+|   Image               Image               Image               Image     
+|   Name ($20)          Name ($30)          Name ($25)          Name ($40) 
++-----------------------------------------------------------------------+
+| About Us | Contact | Privacy Policy | 📧 Newsletter: [Email] [Sign Up] |
+| [FB] [IG] [TikTok]                                                    |
++-----------------------------------------------------------------------+
+
++-----------------------------+
+| [☰] Doggo 🐾 [🔍]           |
++-----------------------------+
+|         HERO IMAGE          |
+| "Shop Aussie Dog Gear!"     |
+|      [SHOP NOW BUTTON]      |
++-----------------------------+
+| [Product Card 1]            |
+| Image + Name + Price        |
+| [Product Card 2]            |
+| ... (Single Column)         |
++-----------------------------+
+| About Us | Contact          |
+| [FB] [IG] [TikTok]          |
+| Newsletter: [Email] [Sign Up]
++-----------------------------+
+
+
 </details>
 
 <details>
-<summary>Contact</summary>
+<summary>Wishlist</summary>
 
-![Contact](readme-docs/mockups/contact.png)
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist ❤️ | Bag 🛒 🔍|
++-----------------------------------------------------------------------+
+| WISHLIST ITEMS:                                                      |
+| [Thumbnail] Chew Toy       | $15       | [Move to Bag] [🗑️ Remove]   |
+| [Thumbnail] Dog Bed        | $50       | [Move to Bag] [🗑️ Remove]   |
++-----------------------------------------------------------------------+
+| About Us | Contact | Privacy Policy | [Social Icons]                 |
++-----------------------------------------------------------------------+
+
++-----------------------------+
+| [☰] Doggo 🐾 ❤️ [🔍]        |
++-----------------------------+
+| Chew Toy | $15 [Move to Bag]|
+| Dog Bed  | $50 [Move to Bag]|
++-----------------------------+
+| About Us | Contact          |
++-----------------------------+
 </details>
 
 <details>
 <summary>Products</summary>
 
-![Products](readme-docs/mockups/products.png)
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist | Bag 🛒 🔍   |
++-----------------------------------------------------------------------+
+| Filters: Categories ▼ | Price ▼ | Sort: Relevance ▼                   |
++-----------------------------------------------------------------------+
+| [Product Card] [Product Card] [Product Card] [Product Card] ...       |
+| Image + Name + Price + [Add to Bag]                                   |
+| ... (Repeat grid)                                                     |
++-----------------------------------------------------------------------+
+| About Us | Contact | Privacy Policy | [Social Icons]                  |
++-----------------------------------------------------------------------+
+
++-----------------------------+
+| [☰] Doggo 🐾 [🔍]           |
++-----------------------------+
+| Filters: [Dropdown Menu]    |
++-----------------------------+
+| [Product Card 1]            |
+| Image + Name + Price        |
+| [Product Card 2]            |
+| ... (Single Column)         |
++-----------------------------+
+| About Us | Contact          |
++-----------------------------+
+
 </details>
 
 <details>
 <summary>Product Detail</summary>
 
-![Product Detail](readme-docs/mockups/product_detail.png)
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist | Bag 🛒 🔍   |
++-----------------------------------------------------------------------+
+| [Large Product Image]          Product Name: Chew Toy                 |
+|                                 Price: $15                            |
+|                                 Size: [Dropdown]                      |
+|                                 Color: [Dropdown]                     |
+|                                 [Add to Bag] [❤️ Wishlist]            |
+|                                 Description: Durable rubber...        |
++-----------------------------------------------------------------------+
+| About Us | Contact | Privacy Policy | [Social Icons]                  |
++-----------------------------------------------------------------------+
+
++-----------------------------+
+| [☰] Doggo 🐾 [🔍]           |
++-----------------------------+
+| [Product Image]             |
+| Name: Chew Toy ($15)        |
+| Size: [Dropdown]            |
+| [Add to Bag] [❤️]           |
+| Description: Durable...     |
++-----------------------------+
+| About Us | Contact          |
++-----------------------------+
+
 </details>
 
 <details>
-<summary>Cart</summary>
+<summary>Shopping bag</summary>
 
-![Cart](readme-docs/mockups/cart.png)
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist | Bag 🛒 🔍   |
++-----------------------------------------------------------------------+
+| ITEMS IN BAG:                                                        |
+| [Thumbnail] Chew Toy       | Qty: [2] | $30       | [🗑️ Remove]      |
+| [Thumbnail] Dog Bed        | Qty: [1] | $50       | [🗑️ Remove]      |
++-----------------------------------------------------------------------+
+| ORDER SUMMARY:                                                       |
+| Subtotal: $80                                                        |
+| Shipping: $10                                                        |
+| Total: $90                                                           |
+| [Checkout Button]                                                    |
++-----------------------------------------------------------------------+
+| About Us | Contact | Privacy Policy | [Social Icons]                  |
++-----------------------------------------------------------------------+
+
++-----------------------------+
+| [☰] Doggo 🐾 [🔍]           |
++-----------------------------+
+| Chew Toy x2 | $30 [🗑️]     |
+| Dog Bed x1  | $50 [🗑️]     |
++-----------------------------+
+| Subtotal: $80              |
+| Shipping: $10              |
+| Total: $90                 |
+| [Checkout Button]          |
++-----------------------------+
 </details>
 
 <details>
 <summary>Checkout</summary>
 
-![Checkout](readme-docs/mockups/checkout.png)
-</details>
++-----------------------------------------------------------------------+
+| 🐾 Doggo Down Under          Home | Products | Wishlist | Bag 🛒 🔍   |
++-----------------------------------------------------------------------+
+| SHIPPING ADDRESS:                                                    |
+| Full Name: [__________]                                              |
+| Address: [__________]                                                |
+| City: [__________]                                                   |
+| Payment: [Card Number] [Expiry] [CVC]                                |
++-----------------------------------------------------------------------+
+| ORDER SUMMARY:                                                       |
+| Chew Toy x2: $30                                                     |
+| Dog Bed x1: $50                                                      |
+| Subtotal: $80 | Shipping: $10 | Total: $90                           |
+| [Place Order Button]                                                 |
++-----------------------------------------------------------------------+
 
-<details>
-<summary>Checkout Success</summary>
-
-![Checkout Success](readme-docs/mockups/checkout_success.png)
++-----------------------------+
+| [☰] Doggo 🐾 [🔍]           |
++-----------------------------+
+| Full Name: [__________]     |
+| Address: [__________]       |
+| Card: [__________]          |
++-----------------------------+
+| Items: $80 | Total: $90     |
+| [Place Order]               |
++-----------------------------+
 </details>
 
 ### Entity Relationship Diagrams
@@ -818,7 +556,7 @@ Wireframes were created in Balsamiq. They were used for initial planning for the
 <details>
 <summary>ERD</summary>
 
-![ERD](readme-docs/mockups/ERD.WEBP)
+![ERD](static/images/readme/erd.png)
 </details>
 
 
@@ -827,8 +565,6 @@ Wireframes were created in Balsamiq. They were used for initial planning for the
 A link to a popular dog charity was added in the footer to increase SEO for the website. 
 
 ### SEO, Keywords
-
-Keyword research was performed using [Wordtracker](https://www.wordtracker.com/search), 
 
 The final keywords used on the website were dog, pet, store, online, shop, toys, food, accessories.
 
