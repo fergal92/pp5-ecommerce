@@ -1,13 +1,13 @@
 # Doggo Down Under
 
-Doggo Down under is a website selling dog products in Australia
+Doggo Down under is a website selling dog products in Australia. It allwos users to purchase a wide range of dog products. Users can search for products via name, category and product description, users can filter based on price and rating. User experience and mobile development is at the heart of Doggo Down Under and users who want to purcahse dog products will have a great experience using this website.
 
 
 ![Doggo Down Under](static/images/readme/homepage-laptop.png)
 
 The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9b3087502e.herokuapp.com/).
 
-# Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Agile Methodology](#agile-methodology)
 - [Design](#design)
@@ -18,54 +18,43 @@ The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9
 - [Credits](#credits)
 
 
-# Features
-## General
+## Features
+### General
 
 This section discusses the more generic features available throughout the site for all users of the website.
 
-### Navigation Bar
+#### Navigation Bar
 <details>
 <summary>Navigation Bar</summary>
 
-![Navbar](readme-docs/screens/navbar.webp)
+![Navbar](static/images/readme/navbar-laptop.png)
+![Navbar](static/images/readme/navbar-mobile.png)
 </details>
 
-The navigation bar is featured across all pages. The navbar is a slightly modified version of the first example from [Bootstrap's navbar documentation](https://getbootstrap.com/docs/5.2/components/navbar/). It includes drop down menus for "Shop", "Help" and "Account", a link to "Recipes" and a cart icon. It also features the website's logo and a search bar.
+The navigation bar is featured across all pages. The navbar is a slightly modified version of the first example from [Bootstrap's navbar documentation](https://getbootstrap.com/docs/5.2/components/navbar/). It includes drop down menus for "All Products", "Clothing" and "Accessories", a drop down menu for logging in/registering or for accessing logged in user functionality like "My Profile", "Product Management" and "My Wishlist", a link to "Home" and a cart icon. It also features the website's logo and a search bar.
 
-The logo in the navbar is visible on all sized screens and links to the home page as user's expect so that it is quick and easy to return to the index from any page on the site.
+The logo in the navbar is visible on all larger screens and links to the home page as user's expect so that it is quick and easy to return to the index from any page on the site.
 
 The search bar is featured in the navbar to make it accessible from any page on the site so that a user can quickly search for a product whenever they want, however it is only immediately visible on larger screens. On smaller screens it is available in the collapsible menu through the navbar toggle to reduce clutter on the screen.
 
-The shop drop down menu is available to all users and features links related to products. It includes a link to "Latest Products" and a link for each category of "Seeds", "Sauces", "Seedboxes" and "Sauceboxes". 
-
-The recipes link is available to all users and links to the recipes page. It is just a simple link to a section of the website that is geared towards user engagement. It was decided to give it its own link rather than include it in one of the drop down menus as it has a goal which doesn't quite fit with the other themes, and is important enough that it could be considered a feature that would drive traffic to the website on its own.
-
-The help drop down menu is available to all users and features links related to customer help and support. It includes links to the "FAQ", "Privacy Policy" and "Contact Us" pages.
-
-The account drop down menu is available to all users but the links available is related to the authentication status of the user and whether the user is staff or not when they are logged in. For users who are not logged in, the links in "Login" and "Register". For users who are logged in but who are not staff, the links available include "My Profile" and "Logout". And for users who are logged in and who are staff, the links available are the same as for not staff but also include "Management".
-
-The above links - "Shop", "Recipes", "Help", and "Account" - are visible on larger screens. On smaller screens the navbar collapses and these links are then accessible through the menu toggle.
-
-The cart icon on the far right of the navbar acts as a toggle for the cart offcanvas element. It is a simple icon, which will display the number of items in the cart but otherwise is kept simple and clean.
-
-
-### Footer
+#### Footer
 <details>
 <summary>Footer</summary>
 
-![Footer](readme-docs/screens/footer.webp)
+![Footer](static/images/readme/footer.png)
 </details>
 
-The footer is featured across all pages on the website. It includes three simple sections related to customer communication, offering ways for the customer to communicate with the business.
-
-The first section, "Contact Us", includes the address of the business, but then features an inline link to the contact page and encourages the user to visit that page to find all the other ways they can contact the business.
-
-The second section includes the newsletter subscription form. It's a very simple form that only requests the user's email address to sign up.
-
-The third section features social media links for the user to find the business on Facebook and Twitter.
+The footer is featured across all pages on the website. It includes two simple sections related to customer communication, offering ways for the customer to communicate with the business.
 
 
-### Index Page
+The first section includes the newsletter subscription form. It's a very simple form that only requests the user's email address to sign up.
+
+The third section features social media links for the user to find the business on Facebook.
+
+It also includes a link to a popular dog charity in AUstralia for further reading for users
+
+
+#### Index Page
 <details>
 <summary>Index Page</summary>
 
@@ -81,56 +70,12 @@ And finally, at the bottom of the index page is a section for the "Newest Produc
 Overall, the index page is intended to be engaging, informative without overwhelming the customer, and to encourage the user to explore the website further.
 
 
-### Contact Page
-<details>
-<summary>Contact Us</summary>
 
-![Contact](readme-docs/screens/contact.webp)
-</details>
-
-The contact page is available through a link in the "Help" drop down menu in the navbar and an inline link in the "Contact Us" section of the footer. It is also reachable through other inline links in other pages of the website, for example the review section on product pages includes a sentence with an inline link to this page that encourages users to visit the contact page if they have any concerns as it feels like an appropriate place on the site where user's may wish to reach out to the business.
-
-The contact page is simply laid out. At the top of the page, below the "Contact Us" heading are the contact details for the business. These details include the phone number which allows the user to call the business from their device simply by clicking on it, and the email address which has similar functionality. There is also the full address of the business and the social media links appear here as well.
-
-Below, there is a simple contact form using [EmailJS](https://www.emailjs.com/) for the user to send a message to the business. When submitted, a message is displayed to inform the user that their message has been sent and the business receives the message forwarded in an email by EmailJS.
-
-![Contact Email](readme-docs/screens/contact_email.webp)
-<details>
-<summary>Contact Email Body</summary>
-
-![Contact Email Body](readme-docs/screens/contact_email_body.webp)
-</details>
-
-Finally, there is a google map that indicates where the business is located with a chilli pepper icon.
-
-
-### FAQ
-<details>
-<summary>FAQ</summary>
-
-![FAQ](readme-docs/screens/faq.webp)
-</details>
-
-Under the "Help" drop down menu in the navbar, there is a link to the FAQ page. This page was created to provide additional context for the user for some areas of the business for which they may have questions or be curious about. While the use of text was intended to be minimal across the majority of the website, occasionally users may wish to learn more about certain aspects of the site or have questions for which the answer is not appropriate to place in other areas of the website. The benefit of having a dedicated section like an FAQ is the ability to expand upon it in the future in case the business discovers there are certain questions they receive frequently from users.
-
-The layout of the FAQ page is extremely simple with an emphasis on legibility. The questions and answers are featured in [Bootstrap Accordion](https://getbootstrap.com/docs/5.2/components/accordion/) elements organised under headings to make the questions on the page easy for the user to sift through to find the ones most relevant to them. When a user finds the question they are looking for, they can simply tap to reveal the answer.
-
-
-### Privacy Policy
-<details>
-<summary>Privacy Policy</summary>
-
-![Privacy Policy](readme-docs/screens/privacy_policy.webp)
-</details>
-
-Also under the "Help" drop down menu in the navbar is a link to the website's privacy policy. It is a simple privacy policy generated with [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
-
-
-## Products
+### Products
 
 This section discusses the features related to the products app. 
 
-### Product Card
+#### Product Card
 <details>
 <summary>Product Card</summary>
 
@@ -144,7 +89,7 @@ The intention behind displaying products like this in the sections mentioned abo
 Some consideration was put into a "Quick Add" feature for users on the card, but as most products have different variants it was decided to forgo that feature currently.
 
 
-### Newest Products
+#### Newest Products
 <details>
 <summary>Newest Products</summary>
 
@@ -155,7 +100,7 @@ The most immediate area of the website related to products is the "Newest Produc
 
 The products are displayed in "Product Cards" which are discussed in the section of the same name above.
 
-### Search Products
+#### Search Products
 <details>
 <summary>Search Products</summary>
 
@@ -165,7 +110,7 @@ The products are displayed in "Product Cards" which are discussed in the section
 The search form in the navbar has basic search functionality. It searches for matches in the product names and description and returns the results displayed as product cards. At the top of the page it informs the user of the number of products found that match the query and includes the query in the result so the user can be sure of what they searched.
 
 
-### Latest Products
+#### Latest Products
 <details>
 <summary>Latest Products</summary>
 
@@ -177,7 +122,7 @@ Similar to the "Newest Products" section of the index page, the first link under
 The products are displayed in "Product Cards" which are discussed in the section of the same name above.
 
 
-### Categories
+#### Categories
 <details>
 <summary>Categories</summary>
 
@@ -191,7 +136,7 @@ There is a single, simple category template that is used for every category page
 There is a simple filter functionality on the category pages which filters the page by subcategory. Almost all products fall within one of "Mild", "Medium", "Hot", and "Mega Hot" subcategories which the user can filter by selecting the subcategory from the drop down menu and clicking "Go".
 
 
-### Product Detail Page
+#### Product Detail Page
 <details>
 <summary>Product Page</summary>
 
@@ -207,7 +152,7 @@ The first part of the product detail page is the section including the product n
 The final part of this section of the product detail page is the "Add To Cart" form, which will be discussed in more detail in "Product Variants" and "Cart" features below. Briefly, it allows the user to select which variant of the product they wish to purchase, the quantity, and to add it to their card.
 
 
-### Product Variants
+#### Product Variants
 <details>
 <summary>Variants</summary>
 
@@ -221,7 +166,7 @@ The variant model is related to the product model in a one-to-many relationship 
 When a user selects a variant in the "Add To Cart" form element, the current stock of that variant of the product is then displayed for the user.
 
 
-### Box Contents
+#### Box Contents
 <details>
 <summary>Box Contents</summary>
 
@@ -235,11 +180,11 @@ On a box product page, the products included are shown in the product detail tab
 If a product is included in a box, when you visit that product's page you will see a line in the table called "Find in" which indicates which box that product is included in. An example of this can be seen in the image above in "Product Variants".
 
 
-## Cart
+### Cart
 
 This section discusses the features associated with the cart app and the functionality involved with managing the user's cart.
 
-### Add To Cart
+#### Add To Cart
 <details>
 <summary>Product Added</summary>
 
@@ -302,84 +247,11 @@ The ability to alter functionality of the "Add To Cart" form element based on us
 Stock has been mentioned quite a bit in this section, but for brevity will be discussed later in the "Stock" section of the "Management" features.
 
 
-### Cart Offcanvas
-<details>
-<summary>Cart Offcanvas Empty</summary>
-
-![Cart Empty](readme-docs/screens/cart_canvas_empty.webp)
-</details>
-
-Based on the [Bootstrap Offcanvas](https://getbootstrap.com/docs/5.2/components/offcanvas/) element, the condensed cart that the user can toggle is designed to have a simple display and limited functionality. 
-
-When the user toggles the cart open, there is a simple heading of "Your Cart" with an "X" next to it to allow the user to close the cart again. Below the heading are two links, one which brings the user to the full cart page and another that goes directly to the checkout.
-
-When the cart is empty, the link to go to the full cart page will bring the user to that page, but the "Go To Checkout" link redirects the user to the index page with a message of "There's nothing in your cart at the moment." Also, when the user's cart is empty the body of this element simply states "Your cart is empty."
-
-<details>
-<summary>Cart Offcanvas With Item</summary>
-
-![Cart Full](readme-docs/screens/cart_canvas.webp)
-</details>
-
-When the user has items in their cart, the cart offcanvas element displays a small box related to user's cart total and delivery immediately below the links. This box displays the total in the cart in a large font and below that information regarding the delivery costs (or if there is no delivery cost applicable as the user has reached the threshold).
-
-Following the total and delivery costs, is a short message to the user to alert them that there is a time limit for checkout. The user is given two hours from when they last added an item to their cart during which the items will be held for them, but after which their cart will be emptied and the items will be restocked. This will be discussed further in the "Stock" section of the "Management" features. 
-
-Below this, short summaries of the items in the cart are displayed. The information includes the thumbnail, name of the product, size select and quantity. Below the list of items is the button to clear the cart.
-
-Within this cart offcanvas element there are no options to adjust the quantity of the items within the cart or to remove individual items. It was decided to leave this functionality to the full cart page to reduce clutter in this element as it is intended as brief summary of the most important elements of the user's impending order. The only CRUD functionality available on this element is the "Clear Cart" button due to the simplicity of it.
-
-
-### Cart
-<details>
-<summary>Cart</summary>
-
-![Cart](readme-docs/screens/cart.webp)
-</details>
-
-The cart page features a summary on the left hand side or top of the page depending on the size of the user's device. On the right hand side or below the summary is a more details list of the items in the user's cart.
-
-The cart summary is a simple table with rows displaying the details of the user's order. It starts with the total number of items in the cart. Then there is a list of each item with their name, quantity, size and price. This is followed by the total if the item prices, the delivery cost and the grand total. Below the table a message is displayed alerting the user to how much more they have to spend to get free delivery, unless they have already reached this. Under this are the "Clear Cart" and "Checkout" buttons.
-
-The item list is on the right of the page on larger screens or below the summary on smaller screens. Here, the user is able to adjust the quantity of the items in the cart or remove the item entirely.
-
-
-### Adjust Cart
-<details>
-<summary>Adjust Cart</summary>
-
-![Adjust Cart](readme-docs/screens/adjust_cart.webp)
-</details>
-
-For each item on the cart page there is the ability to adjust the quantity of the item in the cart. This required slightly different code than was used for the "Add To Cart" form element as here the variant is already selected, but the idea is still the same where the user has to be prevented from adding a quantity greater than the actually number in stock. When the user adjusts the quantity and clicks "Update" they can see that the number has changed, but there is also a small confirmation message that appears to provide additional feedback.
-
-Again for brevity and to try to keep features and concepts contained, the stock feature will be discussed further in "Management" features.
-
-
-### Remove From Cart
-<details>
-<summary>Remove From Cart</summary>
-
-![Remove Cart](readme-docs/screens/remove_cart.webp)
-</details>
-
-Along with adjusting the quantity of items in the cart, the cart also has a "Remove" feature for each item present in the cart. This is a very simple function that deletes the item from the cart and gives the user a confirmation message. When the item is removed from the user's cart it is restocked and they can add it to their cart again if they change their mind.
-
-
-### Clear Cart
-<details>
-<summary>Clear Cart</summary>
-
-![Clear Cart](readme-docs/screens/clear_cart.webp)
-</details>
-
-The clear cart feature is an expansion on the "Remove" function. More extreme, the user is able to empty their entire cart and begin again with their shopping if they choose. They receive a short message stating that their cart is cleared. The items that were in their cart are then restocked.
-
-## Purchasing
+### Purchasing
 
 This section discusses the features related to the checkout app and the functionality involved with user purchases on the site.
 
-### Checkout
+#### Checkout
 <details>
 <summary>Checkout Empty Form</summary>
 
@@ -407,7 +279,7 @@ Before the submit button, there is a warning to the user stating how much money 
 For the delivery form and Stripe elements, the code is based on Code Institute's [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) project.
 
 
-### Complete Order
+#### Complete Order
 <details>
 <summary>Checkout Success</summary>
 
@@ -420,7 +292,7 @@ A success message is displayed on the top of the page which notifies the user of
 Just below the "We have your order" message at the top of the page, there is a link for the user to download a PDF copy of their order so that they can print a simple hardcopy.
 
 
-### Order Confirmation
+#### Order Confirmation
 ![Order Confirmation Subject](readme-docs/screens/order_confirm_email_line.webp)
 <details>
 <summary>Order Confirmation Email</summary>
@@ -431,16 +303,16 @@ Just below the "We have your order" message at the top of the page, there is a l
 Using Stripe webhooks based on the Code Institute [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) project, when a user submits their order a confirmation email is then sent to the user with their payment and delivery details.
 
 
-### Order PDF
+#### Order PDF
 
 The PDF of the user's order is created using [Reportlab](https://docs.djangoproject.com/en/4.1/howto/outputting-pdf/). It generates a very simple summary of the user's order, not unlike the confirmation email, except that the items the user ordered are also listed in the summary. The intention is to provide a convenient method for the user to download or print a copy of all the relevant details of their order.
 
 
-## User Authentication and Profiles
+### User Authentication and Profiles
 
 This section discusses features related to the user authentication, and user profiles and reviews in the profiles app.
 
-### Registration
+#### Registration
 <details>
 <summary>Register</summary>
 
@@ -480,7 +352,7 @@ Following the link in the email above, the user is brought to the confirmation p
 </details>
 
 
-### Login
+#### Login
 <details>
 <summary>Login</summary>
 
@@ -492,7 +364,7 @@ The login page is accessed through a "Login" link under the "Account" drop down 
 Upon logging in, the user is redirected to their user profile.
 
 
-### Logout
+#### Logout
 <details>
 <summary>Logout</summary>
 
@@ -502,7 +374,7 @@ Upon logging in, the user is redirected to their user profile.
 When a user is logged in, the log out page is accessed through a "Logout" link under the "Account" drop down menu. Again, this is a standard allauth template styled to match the rest of the website.
 
 
-### User Profile
+#### User Profile
 <details>
 <summary>User Profile</summary>
 
@@ -518,7 +390,7 @@ The order history table summarises their orders with their order number, the dat
 There are two links below the "Your Profile" heading at the top of the page. One link brings the user to the page containing their reviews and the other links to the page where they can manage their submitted recipes.
 
 
-### Your Reviews
+#### Your Reviews
 <details>
 <summary>User Reviews</summary>
 
@@ -530,7 +402,7 @@ There are two links below the "Your Profile" heading at the top of the page. One
 This page displays each review with all relevant details. It states which product the review is for and links to that product page. It states the date of the review, the body of the review and the rating which the user left. There are also options to edit or delete the review. The user can also edit or delete their reviews directly in the review section of the product's detail page. This functionality is only available to registered users.
 
 
-### Your Recipes
+#### Your Recipes
 <details>
 <summary>User Recipes</summary>
 
@@ -546,7 +418,7 @@ If the website chooses to use a submitted recipe, they will mark it as published
 In future this area of the user profile could be expanded to include a section where the user can save their favourite recipes from the website.
 
 
-### Product Reviews
+#### Product Reviews
 <details>
 <summary>No Product Reviews</summary>
 
@@ -566,57 +438,13 @@ When a user submits a review, a message is displayed thanking the user for submi
 If a user is logged in when looking at their own review on the product page, the options for edit and delete are present on the review they submitted. For an admin user, the option to delete a review is always present on all reviews.
 
 
-### Product Ratings
+#### Product Ratings
 ![Rating](readme-docs/screens/rating.webp)
 
 On each review that is submitted for a product, the individual rating that a user submitted is displayed. The average for all of these submitted ratings is then taken and displayed on the product's detail table.
 
 
-## Recipes
-
-This section discusses features related to the recipes app.
-
-### Recipes
-<details>
-<summary>Recipe List</summary>
-
-![Recipe List](readme-docs/screens/recipe_list.webp)
-</details>
-
-<details>
-<summary>Recipe Page</summary>
-
-![Recipe](readme-docs/screens/recipe.webp)
-</details>
-
-Recipes are added to the site by staff through the "Management" dashboard. 
-
-The website's recipe section is accessed through the "Recipes" link in the navbar and is available to all site users. This link brings the user to the list of recipes which displays a summary of each recipe. The recipe title on the summary links to the recipe page. And the date the recipe was created and the excerpt for the recipe are displayed beneath it.
-
-The recipes are laid out quite simply on the recipe page. Optionally, the staff member who added the recipe may choose to add an image which will be displayed next to the introductory paragraph. Otherwise the recipe page layout follows a simple flow of title, introduction, ingredients, directions and, optionally, an outro to wrap up if necessary.
-
-The recipes section is a very simple, blog-like addition to the website to drive user engagement and encourage users to revisit the site in between purchases.
-
-
-### Recipe Comments
-<details>
-<summary>Recipe Comments</summary>
-
-![Recipe Comments](readme-docs/screens/recipe_comments.webp)
-</details>
-
-<details>
-<summary>Recipe Commented</summary>
-
-![Recipe Commented](readme-docs/screens/recipe_commented.webp)
-</details>
-
-The main way for users to interact with the recipes is by commenting. Commenting functionality is very similar to recipe reviews. Each recipe page features a comment form that users can complete and submit, the comment is then moderated, and when approved the comment is then displayed on the recipe's page.
-
-Again, like the product reviews, the user does not need to be registered to submit a comment but only registered users can edit or delete their own comments.
-
-
-## Management
+### Management
 
 This section discusses features related to the management app. A lot of the features discussed here relate to other apps in the project where their functionality is accessed through the management app by staff.
 
@@ -632,7 +460,7 @@ class StaffRequiredMixin(LoginRequiredMixin, UserPassesTestMixin):
         return self.request.user.is_staff
 ```
 
-### Products
+#### Products
 <details>
 <summary>Management Products</summary>
 
@@ -652,7 +480,7 @@ If no variants are present, this is indicated on the table when the product's va
 From this table, the user is able to perform basic CRUD functions for the products and variants on the website, which is the aim of this section of the website. However, for each product on the website the options to "Edit" and "Delete" are also available on other pages for staff members. For example, if a user is a logged in as staff when they view the product detail page, below the description there are options to "Edit" and "Delete" the product. These options, particularly to edit, are available here in case the staff member is viewing the product page and notices a simple error like a typo and so does not need to return to the management dashboard to correct this.
 
 
-### Stock
+#### Stock
 <details>
 <summary>Management Stock</summary>
 
@@ -697,7 +525,7 @@ def start():
 The implementation of APScheduler for handling this job is based on a tutorial from [Did Coding](https://www.youtube.com/watch?v=Lzy4G1wZ7NQ&ab_channel=DidCoding).
 
 
-### Reviews
+#### Reviews
 <details>
 <summary>Management Reviews</summary>
 
@@ -711,7 +539,7 @@ User reviews are displayed as a list. Each review displays the name of the revie
 In the future, it may be beneficial to introduce further classifications for user reviews beyond a boolean of approved or not. Possibly classifications could include "Pending Approval", "Not Approved", and "Approve". However, currently with the option to delete reviews, reviews that are not acceptable can be removed in that way.
 
 
-### Recipes
+#### Recipes
 <details>
 <summary>Management Recipes</summary>
 
@@ -725,7 +553,7 @@ The recipes page itself is a list of recipes displayed as a summary. It displays
 Staff users can also edit and delete recipes directly from the recipe pages. These options are displayed for users who are logged in and who are staff.
 
 
-### Submitted Recipes
+#### Submitted Recipes
 <details>
 <summary>Submitted Recipe</summary>
 
@@ -737,7 +565,7 @@ Within the recipes section of the management dashboard, there is a link to the "
 The intention is not to directly publish the recipe. From this point, the staff user is expected to add the recipe to the site via the normal route while crediting the original user.
 
 
-### Comments
+#### Comments
 <details>
 <summary>Management Comment</summary>
 
@@ -749,7 +577,7 @@ Also within the recipes section of the management dashboard, is a link to the "R
 In the same way that user reviews are displayed, the user comments display the user who commented, the date it was added, the comment body and options to "Delete" or "Approve" the comment. This section allows for moderation of comments on the recipes as comments are not displayed until approved by a staff member.
 
 
-## Admin
+### Admin
 
 Most of the functionality available on the main website to staff users is also available through the admin panel. Most models are registered to allow admin users to perform CRUD functionality through the admin panel.
 
@@ -758,7 +586,7 @@ In some cases CRUD functionality is only available through the admin panel. For 
 Similarly, users and user profiles can be managed through the admin panel, including changing passwords and deleting users, but this functionality is not present on the management dashboard to discourage staff from attempting to manipulate the user database. Users are able to edit their own profile details or delete their account themselves, but these options are available to them through their profile as they have the right to manage their own personal information.
 
 
-## Future Features
+### Future Features
 
 1. __Improved Stock Management__:
   - Stock management can be improved to allow users more control over their cart. Users could be allowed to keep their carts when logging, or, when logged in, be allowed to save their cart for a period of time.
@@ -772,14 +600,14 @@ Similarly, users and user profiles can be managed through the admin panel, inclu
   - Providing products beyond seeds and sauces. Expanding the range to include items related to plant care or cooking could draw more users, and repeat users. This may require altering the current product models. 
 
 
-# Agile Methodology
-## Epics, User Stories
+## Agile Methodology
+### Epics, User Stories
 
-The project board can be found [here](https://github.com/users/SJECollins/projects/6).
+The project board can be found [here](https://github.com/users/fergal92/projects/6).
 
 Below are the Epics and their User Stories used to shape the creation of the project. Each are linked to their respective version on the project board, where the acceptance criteria, MoSCoW prioritisation labelling and comments can be found.
 
-### [Navigation](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/1):
+#### [Navigation](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/1):
   - Site users should be able to navigate through the site intuitively using the navigation bar and clearly marked links so that they can find the products that they are looking for.
   - User Stories:
     - 1: [View Latest Products](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/2)
@@ -794,7 +622,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can sort categories so that I can view products in a category by other criteria
 
 
-### [Cart](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/2)
+#### [Cart](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/2)
   - Site users should be able to add products in various quantities to their cart. They should be able to view items in the cart, adjust the quantities and remove items from the cart
   - User Stories:
     - 6: [Add To Cart](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/7)
@@ -811,7 +639,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can see on a product's page if the product is already in my cart so that I know if I have already added the product to my cart without having to go through the cart itself
 
 
-### [User Registration](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/3):
+#### [User Registration](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/3):
   - Site users are able to register with the site and create a profile that saves their contact and delivery information. The user should be able to update the information in their profile. The user should be able to view their previous orders from their profile
   - User Stories:
     - 12: [Registration](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/13)
@@ -830,7 +658,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can click "order again" on an item from my order histroy so that I can easily order items I have ordered previously.
 
 
-### [Checkout](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/4)
+#### [Checkout](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/4)
   - User should be able to checkout using their card and provided delivery details. A user should receive confirmation and an order should be generated, and added to their order history if registered.
   - User Stories:
     - 19: [Checkout](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/20)
@@ -845,7 +673,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can view an order summary so that I can review my order after it is placed
 
 
-### [Reviews](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/5)
+#### [Reviews](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/5)
   - Users should be able to review and rate products on the website. The reviews and ratings should be displayed on the product page. Registered users who publish reviews while logged in should be able to view, edit and delete their reviews.
   - User Stories:
     - 24: [Create Review](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/25)
@@ -860,7 +688,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a registered site user I can delete my review so that my review is removed from the site
 
 
-### [Management Dashboard](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/6):
+#### [Management Dashboard](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/6):
   - The site should contain a dashboard for staff to manage products without requiring staff to login to Django's admin dashboard. There should be limited functionality to allow staff to add, edit and delete products from this view, as well as manage stock.
   - User Stories:
     - 29: [View Management Dashboard](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/30)
@@ -877,7 +705,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As an admin user I can update stock from the management dashboard so that the stock of available products is changed on the site
 
 
-### [Home](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/7):
+#### [Home](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/7):
   - The home app provides users with vasic views for the site such as the index and contact pages, to introduce the user to the site and products, and provide contact information
   - User Stories:
     - 35: [View Index](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/36)
@@ -890,7 +718,7 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can use a contact form on the contact page so that I can contact the business easily
 
 
-### [Recipes](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/8):
+#### [Recipes](https://github.com/SJECollins/ci-pp5-the-chillibox/milestone/8):
   - The site should contain a recipe section with recipes created by the site admin/staff for users to browse. Users should be able to comment on the recipes. Users may be able to submit recipes in some form, but not directly post recipes to the website as they should be curated by the admin.
   - User Stories:
     - 39: [Create Recipe](https://github.com/SJECollins/ci-pp5-the-chillibox/issues/40)
@@ -911,9 +739,9 @@ Below are the Epics and their User Stories used to shape the creation of the pro
       - As a site user I can submit recipes so that my recipes can be posted on the website
 
 
-# Design
+## Design
 
-## Colour
+### Colour
 
 The colour palette used for the website based on the central red which was colour picked from the main image used on the carousel on the index page. From there, colours were chosen to compliment or contrast, selecting for legibility, simplicity and to stay with the chilli pepper theme. 
 
@@ -923,7 +751,7 @@ The colour palette used for the website based on the central red which was colou
 ![Colour Palette](readme-docs/mockups/palette.webp)
 </details>
 
-## Mockups
+### Mockups
 
 Initially, the project idea came about during planning for a previous project and mockups were created then. At that stage the project was put aside in favour of another idea that better fit the requirements. At the time, the project was proposed as a subscription box service. It has since changed but the design of the website still shares some similarities visually with the intial mockups.
 
@@ -939,7 +767,7 @@ Initially, the project idea came about during planning for a previous project an
 ![Mock Up Two](readme-docs/mockups/mockup_two.webp)
 </details>
 
-## Wireframes
+### Wireframes
 
 Wireframes were created in Balsamiq. They were used for initial planning for the layout of the website.
 
@@ -985,7 +813,7 @@ Wireframes were created in Balsamiq. They were used for initial planning for the
 ![Checkout Success](readme-docs/mockups/checkout_success.png)
 </details>
 
-## Entity Relationship Diagrams
+### Entity Relationship Diagrams
 
 <details>
 <summary>ERD</summary>
@@ -994,96 +822,57 @@ Wireframes were created in Balsamiq. They were used for initial planning for the
 </details>
 
 
-# SEO and Marketing
+## SEO and Marketing
 
-## SEO, Keywords
-<details>
-<summary>Chilli Pepper Seeds</summary>
+A link to a popular dog charity was added in the footer to increase SEO for the website. 
 
-![Seeds](readme-docs/wordtracker_seeds.webp)
-</details>
+### SEO, Keywords
 
-<details>
-<summary>Hot Sauce</summary>
+Keyword research was performed using [Wordtracker](https://www.wordtracker.com/search), 
 
-![Sauce](readme-docs/wordtracker_sauce.webp)
-</details>
-
-<details>
-<summary>Homemade Hot Sauce</summary>
-
-![Homemade](readme-docs/wordtracker_homemade.webp)
-</details>
-
-<details>
-<summary>Growing Chilli Pepper Plants</summary>
-
-![Growing](readme-docs/wordtracker_growing.webp)
-</details>
-
-<details>
-<summary>Chilli Plant</summary>
-
-![Chilli Plant](readme-docs/wordtracker_chilliplant.webp)
-</details>
-
-Keyword research was performed using [Wordtracker](https://www.wordtracker.com/search), which can be seen in the images linked above.
-
-The final keywords used on the website were "chilli seeds, chilli plant, chilli growing, growing chillies, growing chilli seedsn, chilli pepper plant, chilli recipes, homemade hot sauce, hot sauce Ireland".
+The final keywords used on the website were dog, pet, store, online, shop, toys, food, accessories.
 
 
-## Marketing
+### Marketing
 Based on Code Institute's Web Marketing, questions were collected to try to decide on marketing for the website.
 
 - What kind of business is it?
   - B2C
 - Who are your customers?
-  - Customers looking for locally made hot sauce or to grow plants to make their own
+  - Customers looking for quality dog products in Australia
 - Which online platforms would you find lots of your users?
-  - Facebook, Twitter, possibly Instagram for the visual nature of the plants, maybe YouTube for cooking videos, also possibly Reddit for gardening tips, especially indoor
+  - Facebook
 - What do your users need? How could you deliver useful content to them?
-  - Hot sauce and chilli seeds. Useful content could include reviews and recommendations for both (currently user generated by reviews and ratings on the site), updates to social media/newsletter when new products are on sale, and recipes and plant care articles on the website and through a newsletter.
+  - Dog products. Content could be delivered in cute dog vidoes
 - Would your business run sales or offer discounts? How do you think your users would most like to hear about these offers?
   - Sales and discounts could be offered. Either through posting alerts for sales on social media or sending discount codes to people on the newsletter.
 - Would your business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
-  - Possibly a small budget. Hot sauce is popular but still a little niche in Ireland. Perhaps it would start with low cost options like social media and newsletters.
+  - Possibly a small budget. Perhaps it would start with low cost options like social media and newsletters.
 
 The e-commerce businesses that inspired aspects of this website include:
-  - [Fatalii Seeds](https://fataliiseeds.net/)
-  - [Chilli Pepper Madness](https://www.chilipeppermadness.com/)
+  - [Petworld](https://www.petworld.ie/)
+  - [Petstop](https://www.petstop.ie/)
 
 
-## Content Marketing
 
-The Recipes app was added to the project in an effort to create additional content on the website aimed at customer engagement and retention. 
-
-By publishing recipes related to the products on the website, this part of the project aims to encourage customers to return to the website other than for purchases (and they may decide to browse products, especially those mentioned in recipes, during their visit). Similarly to the reviews feature on the product pages, recipes have a comment section to allow for customer engagement and interaction. Engagement could be expanded to include links so users can search by most popular recipes. And "favouriting" recipes so that users can compile recipes they want to easily find.
-
-The Recipes app also includes functionality for customers who are registered to submit recipes from their user profile as a way to encourage customers to engage with the website.
-
-A possible expansion on using content for marketing beyond want is in place currently, could include other engaging features which are easily implemented, such as a plant care blog to encourage customers to return to the site for tips on growing and caring for their chilli plants.
-
-Both the Recipes app and the Blog ideas require considerable content creation from the business owner though which may be time consuming. So, another possible idea that was considered was a "Plant Care Forum" where the content can be user generated and would require users to be registered with the site which may encourage user retention. The drawback to this is it would require more constant moderation as users expect their messages to appear in a forum with little delay and so a moderator would need to check regularly to ensure inappropriate messages are removed.
-
-
-## Social Media
+### Social Media
 <details>
 <summary>Facebook Mockup</summary>
 
-![Facebook](readme-docs/mockups/facebook.webp)
+![Facebook](static/images/readme/fb-page-doggo-down-under.png)
 </details>
 
-Above is a mock up of the Facebook business page for the Chillibox. This would be the primary social media site for the business to communicate with customers. Twitter would also be a good choice, especially for quick alerts for sales, etc.
-
-Instagram and YouTube should be consider with site expansion as chilli pepper plants are visually appealing and the Recipes app could be expanded to include videos or links to videos of the recipes being prepared for the website.
+A Facebook business page was created for the website. Above is the screenshot of the page. This would be the primary social media site for the business to communicate with customers. Link to [Facebook page here](https://www.facebook.com/profile.php?id=61572882855702)
 
 
-## Email
-
-Through a subscription form in the footer, the website implements newsletter using Mailchimp. The intention with the newsletter would be to update customers when new products are added to the site and new recipes are published, or to send discount codes to newsletter subscribers which is a common practice
 
 
-# Technologies Used
+### Email
+
+Through a subscription form in the footer, the website saves email addresses and allows the website owner to collect email addresses to send out a newsletter. The intention with the newsletter would be to update customers when new products are added to the site, or to send discount codes to newsletter subscribers which is a common practice.
+
+
+## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5): mark-up language.
 - [CSS3](https://en.wikipedia.org/wiki/CSS): styling.
@@ -1094,10 +883,6 @@ Through a subscription form in the footer, the website implements newsletter usi
   - [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/): for forms.
   - [Django countries](https://pypi.org/project/django-countries/): for countries in forms.
   - [Crispy Bootstrap5](https://pypi.org/project/crispy-bootstrap5/): bootstrap5 template pack for crispy forms.
-  - [Pillow](https://pypi.org/project/Pillow/): python imagining library.
-  - [Django APScheduler](https://pypi.org/project/django-apscheduler/): scheduling tasks.
-  - [ReportLab](https://pypi.org/project/reportlab/)
-  - [Coverage](https://github.com/nedbat/coveragepy/tree/6.5.0): for measuring code coverage of Python tests.
 - [Stripe](https://stripe.com): payments.
 - [JQuery](https://jquery.com/): UI.
 - [HTMX](https://htmx.org/): UI.
@@ -1105,150 +890,27 @@ Through a subscription form in the footer, the website implements newsletter usi
 - [Cloudinary](https://cloudinary.com/): store static and media files.
 - [GIT](https://git-scm.com/): for version control.
 - [GitHub](https://github.com/): for host repository.
-- [Gitpod](https://www.gitpod.io/): online IDE.
+- [VSCode](https://code.visualstudio.com/): online IDE.
 - [Heroku](https://)
 - [Google Fonts](https://fonts.google.com/): to import fonts.
 - [Font Awesome](https://fontawesome.com/): to import icons.
 - [Balsamiq](https://balsamiq.com/): to create wireframes.
 - [Diagrams.net](https://www.diagrams.net/): for Entity Relationship Diagram.
 - [GIMP](https://www.gimp.org/): to edit images and create colour palette.
-- [Inkscape](https://inkscape.org/): to create the logo.
 
 
-# Testing
+## Testing
 
 Testing for the site can be found at the below link:
-
 [Link to TESTING.md](TESTING.md)
 
 
-# Deployment
+## Deployment
 
-## Steps to deploy site using Heroku:
-- Assuming gunicorn, dj_database_url, psycopg2 and django-cloudinary-storage have been installed
-- Create an external database with ElephantSQL
-  - Register/login to your ElephantSQL dashboard and click "Create New Instance"
-  - Select a name and plan for your database
-  - Then click "Select Region"
-  - Select a region and data center close to you
-  - Click "Review", then check your details are correct and click "Create Instance"
-  - Select the database from your dashboard and you can see the URL for your database
-- On the Heroku dashboard, select "New" and click "Create new app"
-  - Create a unique app name - this will be added to allowed hosts in the project settings
-  - Select your region
-  - Click "Create app"
-- Go to the Resources tab:
-  - Search for "postgres" in the add-ons search bar and select "Heroku Postgres"
-  - Click "Submit Order Form"
-- Go to the settings tab:
-  - Scroll down to the config vars section and select "Reveal Config Vars"
-  - Add a new config var for DATABASE_URL - copy the URL from your ElephantSQL database that you created earlier
-  - Add a new config var for SECRET_KEY - create your own or use a django secret key generator
-  - Add a new config var for CLOUDINARY_URL - copy the "API Environment variable" from your cloudinary dashboard, do not include "CLOUDINARY_URL="
-  - Add a new config var for STRIPE_PUBLIC_KEY - copy your public key from stripe
-  - Add a new config var for STRIPE_SECRET_KEY - copy your secret key from stripe
-  - Add a new config var for STRIPE_WH_SECRET - copy your webhook secret from stripe from when you connected your endpoint
-  - Add a new config var for EMAIL_HOST_USER - enter the gmail address you're using for this project
-  - Add a new config var for EMAIL_HOST_PASS - enter the 16 digit key gmail app password
-  - Add a new config var for DISABLE_COLLECTSTATIC, with the value 1 - this will be removed before deployment
-- In your project, for your environment variables:
-  - Create a new env.py file in the top level directory
-  - In env.py:
-    - Import os
-    - Add 'os.environ["DATABASE_URL"] = "Paste the DATABASE_URL from the Heroku app here"'
-    - Add 'os.environ["SECRET_KEY"] = "Paste your new secret key here"'
-    - Add 'os.environ["CLOUDINARY_URL"] = "Paste your CLOUDINARY_URL as in the Heroku app here"'
-    - Add 'os.environ["STRIPE_PUBLIC_KEY"] = "Paste your STRIPE_PUBLIC_KEY here"' - this isn't required to be secret, but for sake of keeping these keys together
-    - Add 'os.environ["STRIPE_SECRET_KEY"] = "Paste your STRIPE_SECRET_KEY here"'
-    - Add 'os.environ["STRIPE_WH_SECRET"] = "Paste your STRIPE_WH_SECRET here"'
-  ```
-  import os
+Detailed deployment steps can be found at the below link:
+[Link to DEPLOYMENT.md](DEPLOYMENT.md)
 
-  os.environ['DATABASE_URL'] = 'postgres://exampledatabaseurl'
-  os.environ['SECRET_KEY'] = 'examplesecretkey'
-  os.environ['CLOUDINARY_URL'] = 'cloudinary://examplecloudinaryurl'
-  os.environ['STRIPE_PUBLIC_KEY'] = 'examplestripepublickey'
-  os.environ['STRIPE_SECRET_KEY'] = 'examplestripesecretkey'
-  os.environ['STRIPE_WH_SECRET'] = 'examplestripeWHsecret'
-  ```
-  - If not already present, create a .gitignore file and add env.py to it
-
-- In your project, in settings.py:
-  - Import os
-  - Import dj_database_url
-  - if os.path.isfile('env.py'):
-	import env
-  ```
-  import os
-  import dj_database_url
-  if os.path.isfile('env.py'):
-      import env
-  ```
-  - Replace the insecure secret key with "SECRET_KEY = os.environ.get('SECRET_KEY')"
-  ```
-  SECRET_KEY = os.environ.get('SECRET_KEY')
-  ```
-  - Link new database by commenting out old DATABASES section and adding:
-	DATABASES = {
-			'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-			}
-  ```
-  DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-  ```
-  - Add Heroku to the allowed hosts: "ALLOWED_HOSTS = ['the_app_name_from_heroku.herokuapp.com']
-  ```
-  ALLOWED_HOSTS = ['example-heroku-app-name.herokuapp.com', 'localhost']
-  ```
-  - Add 'cloudinary_storage' (above 'django.contrib.staticfiles') and 'cloudinary' (below) to INSTALLED_APPS
-  ```
-  ...
-  'cloudinary_storage',
-  'django.contrib.staticfiles',
-  'cloudinary',
-  ...
-  ```
-  - Setup Cloudinary to store static and media files
-  ```
-    STATIC_URL = '/static/'
-	STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-	STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-	STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-	MEDIA_URL = '/media/'
-	DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-  ```
-  - Run 'python3 manage.py collectstatic' to collect static files
-- In your project:
-  - Create a Procfile in the top level directory and add 'web: gunicorn project_name.wsgi' to tell 
-  ```
-  web: gunicorn project_name.wsgi
-  ```
-  - Create a requirements file with 'pip3 freeze --local > requirements.txt' for Heroku to install required packages
-  ```
-  pip3 freeze --local > requirements.txt
-  ```
-  - Make migrations with 'python3 manage.py migrate'
-  ```
-  python3 manage.py migrate
-  ```
-  - Commit and push to GitHub
-- Prior to final deployment:
-  - Set DEBUG = False in project settings.py
-  - Remove DISABLE_COLLECTSTATIC config var from Heroku
-- Go to the Deploy tab:
-  - Select GitHub and confirm connection to GitHub account
-  - Search for the repository and click "Connect"
-  - Scroll down to the deploy options
-  - Select automatic deploys if you would like automatic deployment with each new push to the GitHub repository
-  - In manual deploy, select which branch to deploy and click "Deploy Branch"
-  - Heroku will start building the app
-- The link to the app can be found at the top of the page by clicking "Open app"
-
-The live site can be found here: [The Chillibox](https://ci-pp5-the-chillibox.herokuapp.com/)
-
-## Steps to clone site:
+### Steps to clone site:
 - In the GitHub repository, click the "Code" button.
 - Select "HTTPS" and copy the URL.
 - Open Git Bash and navigate to the repository where you would like to locate the cloned repository.
@@ -1257,60 +919,19 @@ The live site can be found here: [The Chillibox](https://ci-pp5-the-chillibox.he
 - Install required packages with the command "pip3 install -r requirements.txt"
 
 
-# Credits
-## Code
-- The code for the MutationObserver is based on this page from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
-- The code for scheduling the restock task with APScheduler is based on this tutorial from [Did Coding](https://www.youtube.com/watch?v=Lzy4G1wZ7NQ&ab_channel=DidCoding)
-- The code for creating the order PDF with ReportLab is based on a combination of:
-  - [The Django docs](https://docs.djangoproject.com/en/4.1/howto/outputting-pdf/)
-  - [This Codemy.com tutorial](https://www.youtube.com/watch?v=1x_ACMFzGYM&ab_channel=Codemy.com)
-  - [This article on blog.pythonlibrary.org](https://www.blog.pythonlibrary.org/2018/02/06/reportlab-101-the-textobject/)
-  - And [ReportLab's docs](https://www.reportlab.com/docs/reportlab-userguide.pdf)
-- The code for holding stock while the user is shopping is based on [this file](readme-docs/sarah_cart_holding.txt) which my mentor, Brian Macharia, wrote as we discussed the problem during a session.
-- The code to create a thumbnail from image for the product model is from this Github Gist by [Valberg](https://gist.github.com/valberg/2429288)
-- The code for cart contexts and the checkout app is based on Code Institute's [Boutique ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
-- The code for the login adapter is based on custom redirects in the [allauth docs](https://django-allauth.readthedocs.io/en/latest/advanced.html#custom-redirects)
-- The code to integrate map on the contact page is based on the code from the [Google Maps Platform](https://mapsplatform.google.com/)
-- The privacy policy and HTML for it is from [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
+## Credits
+### Code
+- The code for the website was heavily based on the code for Boutique Ado by [Code Institute](https://codeinstitute.net/ie/). All credit goes to code institute and the lecturer who gave the pp5 module for the majority of the code base has came from there.
 
-## Media
-- The logo was created in Inkscape
-- The bottle labels were made in Inkscape
-- The box images were made in Gimp
+
+### Media
+- Favicons created with [Favicon Generator](https://favicon.io/)
 - Icons are from [Font Awesome](https://fontawesome.com)
 - The fonts are imported from [Google Fonts](https://fonts.google.com)
-
-- Images from [Pixabay](https://pixabay.com/):
-  - [Bell Pepper](https://pixabay.com/photos/bell-peppers-red-green-food-2708680/) by JillWellington
-  - [Bird's Eye](https://pixabay.com/photos/bird-s-eye-chili-bird-eye-chili-2723877/) by bluebeens
-  - [Cascabel](https://pixabay.com/photos/cascabel-chili-rattle-chili-7539533/) by balouriarajesh
-  - [Cayenne](https://pixabay.com/photos/hot-peppers-growing-red-peppers-2708678/) by JillWellington
-  - [Ghost Pepper](https://pixabay.com/photos/ghost-pepper-hot-scoville-units-3743479/) by jim CARNAHAN
-  - [Habanero](https://pixabay.com/photos/yellow-habanero-pepper-plant-4394115/) by hat3m
-  - [Hungarian Wax](https://pixabay.com/photos/hungarian-wax-peppers-1374791/) by Brett Hondow
-  - [Jalapeno](https://pixabay.com/photos/chili-jalapeno-chilli-pepper-sharp-282054/) by mld
-  - [Paprika](https://pixabay.com/photos/chilli-paprika-organic-vegetable-7527531/) by hartono subagio
-  - [Poblano](https://pixabay.com/photos/chile-poblano-food-puebla-4466725/) by Víctor González
-  - [Purple Bell](https://pixabay.com/photos/farm-fresh-bell-peppers-pepper-bell-3896465/)
-  - [Serrano](https://pixabay.com/photos/chilli-pepper-plant-hot-small-red-248556/) by francis goh
-  - [Bottle](https://pixabay.com/photos/bottle-image-mockup-product-red-7458648/) by Personal_Graphic
-  - [Pasta Sauce](https://www.pexels.com/photo/jalapeno-poppers-on-wooden-board-4096902/) by joshuemd
-
-- Images from [Pexels](https://pexels.com):
-  - [Jalapeno Poppers](https://www.pexels.com/photo/jalapeno-poppers-on-wooden-board-4096902/) by Magda Ehlers
-
-- Images from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page):
-  - [Banana](https://commons.wikimedia.org/wiki/File:Peppers_Summer_2017_(252381621).jpeg) by Paul Zucker
-  - [Carolina Reaper](https://commons.wikimedia.org/wiki/File:Mature_Carolina_Reaper.jpg) by Magnolia677
-  - [Fatalii](https://commons.wikimedia.org/w/index.php?curid=41796968) by Tigerente
-  - [Fresno](https://commons.wikimedia.org/wiki/File:Fresno_pepper_6.jpg) by Nadiatalent
-  - [Hidalgo](https://commons.wikimedia.org/wiki/File:Capsicum_frutescens_%27Hidalgo%27_003.JPG) by H. Zell
-  - [Moruga Scorpion](https://commons.wikimedia.org/wiki/File:Trinidad_moruga_scorpion_ripe_ready_to_pick.jpg) by Tparsons
-  - [Naga](https://commons.wikimedia.org/wiki/File:Naga_jolokia_chili.jpg) by Balaram Mahalder
-  - [Scotch Bonnet](https://commons.wikimedia.org/wiki/File:20190811_Scotch_Bonnet_02.jpg) by Zinnman
+- Product images from the internet and from photos I took myslef
 
 
-## Acknowledgement
+### Acknowledgement
 - Iuliia Konovalova - My mentor Julia was very supportive during this project. She certainly pushed me to complete a high standard of project especially for the readme and testing sections. I took inspiration from her README.md and TESTING.md files for my own.
 - Happiness Generator - My first hackathon project. I learned so much from participating in this project and team. We won the March hackathon for 2024 and my team members were a great source of inspiration for me.
 - freeCodeCamp - I completed the freeCodeCamp responsive web design module before enrolling in code institute and I learned much from that module that I was able to utilise for this project.
