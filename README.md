@@ -322,9 +322,7 @@ Most of the functionality available on the main website to staff users is also a
 3. No payment data is stored locally.  
 
 **Tasks**:  
-- Set up tripe account and ensure integration
-
----
+- Set up stripe account and ensure integration
 
 ---
 
