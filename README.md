@@ -1,6 +1,6 @@
 # Doggo Down Under
 
-Doggo Down under is a website selling dog products in Australia. It allwos users to purchase a wide range of dog products. Users can search for products via name, category and product description, users can filter based on price and rating. User experience and mobile development is at the heart of Doggo Down Under and users who want to purcahse dog products will have a great experience using this website.
+Doggo Down under is a website selling dog products in Australia. It allows users to purchase a wide range of dog products. Users can search for products via name, category and product description, users can filter based on price and rating. User experience and mobile development is at the heart of Doggo Down Under and users who want to purchase dog products will have a great experience using this website.
 
 
 ![Doggo Down Under](static/images/readme/responsive-doggo-down-under.png)
@@ -12,6 +12,7 @@ The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9
 - [Agile Methodology](#agile-methodology)
 - [Design](#design)
 - [SEO and Marketing](#seo-and-marketing)
+- [Business Model](#business-model)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -593,7 +594,6 @@ The e-commerce businesses that inspired aspects of this website include:
   - [Petstop](https://www.petstop.ie/)
 
 
-
 ### Social Media
 <details>
 <summary>Facebook Mockup</summary>
@@ -604,11 +604,43 @@ The e-commerce businesses that inspired aspects of this website include:
 A Facebook business page was created for the website. Above is the screenshot of the page. This would be the primary social media site for the business to communicate with customers. Link to [Facebook page here](https://www.facebook.com/profile.php?id=61572882855702)
 
 
-
-
 ### Email
 
 Through a subscription form in the footer, the website saves email addresses and allows the website owner to collect email addresses to send out a newsletter. The intention with the newsletter would be to update customers when new products are added to the site, or to send discount codes to newsletter subscribers which is a common practice.
+
+
+## Business Model
+Doggo Down Under is a Business-to-Customer (B2C) e-commerce platform specializing in dog products. The website provides an online storefront where customers can browse, purchase, and receive high-quality dog-related products delivered to their doorsteps. The platform caters to both new and returning customers, ensuring a seamless shopping experience with features such as a wishlist, shopping cart, secure checkout, and account management.
+
+### Revenue Model
+Doggo Down Under primarily generates revenue through direct product sales, with potential for expansion into additional revenue streams:
+
+1. Retail Sales:
+
+- A curated selection of dog products, including toys, accessories, grooming supplies, food, and treats.
+- Customers can add products to their shopping bag and complete purchases via Stripe-powered secure payments.
+
+2. Upselling & Cross-Selling:
+- Product recommendations on product pages to encourage additional purchases.
+- Special bundle offers or discounts for purchasing related items together.
+
+3. Loyalty & Repeat Business:
+- Wishlist feature allows customers to save favorite products for future purchases.
+- Email marketing via newsletter subscription, keeping customers engaged with promotions and new product releases.
+
+### Customer Segments
+Doggo Down Under primarily targets:
+- Dog Owners: Individuals looking for high-quality products for their pets.
+- New Pet Owners: First-time dog owners needing essential supplies.
+- Gift Buyers: People purchasing gifts for dog-loving friends and family.
+- Repeat Customers: Returning shoppers who benefit from promotions and loyalty incentives.
+
+### Key Features Supporting the Business Model
+- User-Friendly Navigation & Search Bar: Ensures customers can quickly find the products they need.
+- Secure Checkout with Stripe Integration: Provides a seamless and trustworthy payment experience.
+- Mobile & Desktop Optimization: Ensures a responsive shopping experience across all devices.
+- Newsletter Signup: Enables direct communication with customers for promotions and updates.
+- Social Media Links: Increases brand visibility and customer engagement via Facebook.
 
 
 ## Technologies Used
