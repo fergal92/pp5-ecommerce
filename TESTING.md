@@ -140,4 +140,10 @@ Responsivity was checked on all screen sizes and chrome, firefox and edge
 
 ---
 
+## **Lighthouse Report**
+A lighthouse report was generated in chrome
+![Lighthouse report](static/images/readme/lighthouse.png)
+
+---
+
 End of testing report.
