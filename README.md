@@ -695,6 +695,10 @@ Detailed deployment steps can be found at the below link:
 ### Console error
 There is an error in the console when a product is in the shopping bag. The error indicates that this is due to Stripe.
 
+### Future Improvements
+- Add the ability to edit full name and username in the my profile form
+- Integrate the ratings functionality with the review feature
+
 
 ## Credits
 ### Code

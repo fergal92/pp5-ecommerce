@@ -1,6 +1,8 @@
 from django import forms
 from .models import UserProfile
 import pycountry
+from datetime import date, timedelta
+from django.core.exceptions import ValidationError
 
 
 class UserProfileForm(forms.ModelForm):
@@ -9,7 +11,7 @@ class UserProfileForm(forms.ModelForm):
         widget=forms.TextInput(
             attrs={
                 'class': 'border-black rounded-0 profile-form-input',
-                'type': 'text',  # ✅ Changed from "date" to "text"
+                'type': 'text',  # Changed from "date" to "text"
                 'placeholder': 'Date of Birth',
                 # When clicked, change to date picker
                 'onfocus': "(this.type='date')",
@@ -55,3 +57,12 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+    def clean_date_of_birth(self):
+        date_of_birth = self.cleaned_data.get('date_of_birth')
+        if date_of_birth:
+            today = date.today()
+            age = today - date_of_birth
+            if age < timedelta(days=16*365):
+                raise ValidationError('You must be at least 16 years old.')
+        return date_of_birth

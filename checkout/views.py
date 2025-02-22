@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
+from django.core.mail import EmailMultiAlternatives, send_mail
+from django.template.loader import render_to_string
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
+
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
@@ -174,6 +177,21 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
+    
+    # ✅ Load Email Subject and Body from Templates
+    subject = render_to_string('checkout/confirmation_emails/confirmation_email_subject.txt', {'order': order}).strip()
+    body_text = render_to_string('checkout/confirmation_emails/confirmation_email_body.txt', {
+        'order': order,
+        'contact_email': settings.DEFAULT_FROM_EMAIL 
+        })
+        
+    # ✅ SEND EMAIL CONFIRMATION
+    from_email = settings.DEFAULT_FROM_EMAIL
+    recipient_list = [order.email]
+
+    message = EmailMultiAlternatives(subject, body_text, from_email, recipient_list)
+    message.send()
+
 
     if 'bag' in request.session:
         del request.session['bag']

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thank You for Your Purchase, {{ order.full_name }}!</h2>
+        <p>Your order number is <strong>{{ order.order_number }}</strong>.</p>
+        <p>We are processing your order and will update you soon.</p>
+        <p>Best regards, <br> Your Store Team</p>
+    </div>
+</body>
+
+</html>
