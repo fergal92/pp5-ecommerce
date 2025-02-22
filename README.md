@@ -16,6 +16,7 @@ The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
+- [Bugs](#bugs)
 - [Credits](#credits)
 
 
@@ -688,6 +689,11 @@ Detailed deployment steps can be found at the below link:
 - Type "git clone" followed by the copied URL.
 - Press enter to create the clone.
 - Install required packages with the command "pip3 install -r requirements.txt"
+
+
+## Bugs
+### Console error
+There is an error in the console when a product is in the shopping bag. The error indicates that this is due to Stripe.
 
 
 ## Credits
