@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'checkout',
     'list',
     'email_subscribers',
+    'contact',
     'django_countries',
     'profiles',
 
@@ -119,13 +120,14 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 # Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #change to smtp at end
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' #change to smtp at end
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+CONTACT_EMAIL = os.environ.get('EMAIL_HOST_USER')
     
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
