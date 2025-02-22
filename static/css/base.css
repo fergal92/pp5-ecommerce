@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #FFE8D4;
 }
 
 /* from Bulma */
@@ -32,27 +32,27 @@ header {
 }
 
 .shop-now-button {
-    background: black;
+    background: #45062E;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #45062E;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important;
+    color: #45062E !important;
     /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid #45062E;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #45062E;
     color: white !important;
 }
 
@@ -67,15 +67,15 @@ header {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #45062E !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #45062E !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #45062E !important;
 }
 
 .overlay {
@@ -86,6 +86,18 @@ header {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+.card-img-top-link {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top-link:hover {
+    transform: scale(1.05);
+    border: 2px solid #45062E;
 }
 
 a.category-badge>span.badge:hover {
@@ -113,7 +125,7 @@ input[name='q']::placeholder {
 
 /* Footer Styling */
 footer {
-    background-color: #000;
+    background-color: #45062E;
     /* Match the dark background */
     color: white;
     /* Set text color to white for contrast */
@@ -249,7 +261,7 @@ footer .social-icons a:hover {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #45062E;
     position: absolute;
     top: -10px;
     right: 36px;

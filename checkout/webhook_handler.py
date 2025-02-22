@@ -139,16 +139,21 @@ class StripeWH_Handler:
                                 product_size=size,
                             )
                             order_line_item.save()
+                            
+                self._send_confirmation_email(order)
+                
             except Exception as e:
                 if order:
                     order.delete()
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
-                    status=500)
-                self._send_confirmation_email(order)
+                    status=500
+                )
+                
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
-            status=200)
+            status=200
+        )
 
     def handle_payment_intent_payment_failed(self, event):
         """

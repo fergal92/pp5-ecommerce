@@ -2,8 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-
+from django.core.exceptions import ValidationError
+from django.core.validators import RegexValidator
+from django.utils.translation import gettext_lazy as _
 from django_countries.fields import CountryField
+from datetime import date, timedelta
 
 
 class UserProfile(models.Model):
@@ -12,9 +15,11 @@ class UserProfile(models.Model):
     delivery information and order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    date_of_birth = models.DateField(null=True, blank=True)  # New field added
+    date_of_birth = models.DateField(null=True, blank=True)
     default_phone_number = models.CharField(
-        max_length=20, null=True, blank=True)
+        max_length=20, null=True, blank=True,
+        validators=[RegexValidator(regex='^\d+$', message='Phone number must be numeric')]
+    )
     default_street_address1 = models.CharField(
         max_length=80, null=True, blank=True)
     default_street_address2 = models.CharField(
@@ -29,6 +34,13 @@ class UserProfile(models.Model):
     def __str__(self):
         return self.user.username
 
+    def clean(self):
+        # Custom validation for date_of_birth
+        if self.date_of_birth:
+            today = date.today()
+            age = today - self.date_of_birth
+            if age < timedelta(days=16*365):
+                raise ValidationError(_('You must be at least 16 years old.'))
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):

@@ -48,4 +48,16 @@
     </p>
 </form>
 
+<script type="text/javascript">
+    // Set focus on the first input field of the login form when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('.login');
+        const firstInput = form.querySelector(
+        'input[type="text"], input[type="email"], input[type="password"]');
+        if (firstInput) {
+            firstInput.focus();
+        }
+    });
+</script>
+
 {% endblock %}

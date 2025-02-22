@@ -7,4 +7,7 @@ urlpatterns = [
         'email_subscribers/',
         views.newsletter_signup,
         name='newsletter_signup'),
+    # path('verify-email/<uidb64>/<token>/',
+    #     views.verify_email, 
+    #     name='verify_email'),
 ]

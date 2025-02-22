@@ -90,7 +90,7 @@ def product_detail(request, product_id):
     # If it's a POST request, save the review
     if request.method == 'POST' and request.user.is_authenticated:
         # Check if the user has already submitted a review for this product
-        if Review.objects.filter(product=product, user=request.user).exists():
+        if Review.objects.filter(product=product, user=user_profile).exists():
             messages.error(
                 request,
                 "You have already submitted a review for this product.")
