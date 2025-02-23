@@ -1,1 +1,1 @@
-Doggo Dowon Under Confirmation for Order Number {{ order.order_number }}
+Doggo Down Under Confirmation for Order Number {{ order.order_number }}
