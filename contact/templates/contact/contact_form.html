@@ -25,11 +25,10 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-6">
-
-            <form class="mt-3" method="POST">
+            <form class="mt-3" method="POST" aria-label="Contact Form">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit">Send Message</button>
+                <button type="submit" aria-label="Send Message">Send Message</button>
             </form>
         </div>
     </div>

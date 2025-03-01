@@ -1,4 +1,4 @@
-# Testing Documentation for Doggo Down Under
+# Manual testing Documentation for Doggo Down Under
 
 This document outlines the testing results for various features of the **Doggo Down Under** e-commerce website.
 

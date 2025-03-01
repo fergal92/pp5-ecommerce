@@ -38,12 +38,14 @@
                     <tr>
                         <td class="p-3 w-25">
                             {% if item.product.image %}
-                            <a href="{% url 'product_detail' product_id=item.product.id %}">
+                            <a href="{% url 'product_detail' product_id=item.product.id %}"
+                                aria-label="View details for {{ item.product.name }}">
                                 <img class="img-fluid rounded" src="{{ item.product.image.url }}"
                                     alt="{{ item.product.name }}">
                             </a>
                             {% else %}
-                            <a href="{% url 'product_detail' product_id=item.product.id %}">
+                            <a href="{% url 'product_detail' product_id=item.product.id %}"
+                                aria-label="View details for {{ item.product.name }}">
                                 <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
                                     alt="{{ item.product.name }}">
                             </a>
@@ -60,7 +62,8 @@
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
                         <td class="py-3">
-                            <a href="#" class="remove-item text-danger" id="remove_{{ item.id }}">
+                            <a href="#" class="remove-item text-danger" id="remove_{{ item.id }}"
+                                aria-label="Remove {{ item.product.name }} from wishlist">
                                 <small>Remove</small>
                             </a>
                             <!-- The form that will be triggered by the link -->
@@ -75,7 +78,7 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your wishlist is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg" aria-label="Keep Shopping">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>

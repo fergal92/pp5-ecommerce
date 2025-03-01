@@ -8,16 +8,94 @@ Doggo Down under is a website selling dog products in Australia. It allows users
 The live site is available here: [Doggo Down Under](https://doggo-down-under-1b9b3087502e.herokuapp.com/).
 
 ## Table of Contents
+- [SEO and Marketing](#seo-and-marketing)
+- [Business Model](#business-model)
 - [Features](#features)
 - [Agile Methodology](#agile-methodology)
 - [Design](#design)
-- [SEO and Marketing](#seo-and-marketing)
-- [Business Model](#business-model)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Bugs](#bugs)
 - [Credits](#credits)
+
+## SEO and Marketing
+
+A link to a popular dog charity was added in the footer to increase SEO for the website. 
+
+### SEO, Keywords
+
+The final keywords used on the website were dog, pet, store, online, shop, toys, food, accessories.
+
+
+### Marketing
+Based on Code Institute's Web Marketing, questions were collected to try to decide on marketing for the website.
+
+- What kind of business is it?
+  - B2C
+- Who are your customers?
+  - Customers looking for quality dog products in Australia
+- Which online platforms would you find lots of your users?
+  - Facebook
+- What do your users need? How could you deliver useful content to them?
+  - Dog products. Content could be delivered in cute dog vidoes
+- Would your business run sales or offer discounts? How do you think your users would most like to hear about these offers?
+  - Sales and discounts could be offered. Either through posting alerts for sales on social media or sending discount codes to people on the newsletter.
+- Would your business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
+  - Possibly a small budget. Perhaps it would start with low cost options like social media and newsletters.
+
+The e-commerce businesses that inspired aspects of this website include:
+  - [Petworld](https://www.petworld.ie/)
+  - [Petstop](https://www.petstop.ie/)
+
+
+### Social Media
+<details>
+<summary>Facebook Mockup</summary>
+
+![Facebook](static/images/readme/fb-page-doggo-down-under.png)
+</details>
+
+A Facebook business page was created for the website. Above is the screenshot of the page. This would be the primary social media site for the business to communicate with customers. Link to [Facebook page here](https://www.facebook.com/profile.php?id=61572882855702)
+
+
+### Email
+
+Through a subscription form in the footer, the website saves email addresses and allows the website owner to collect email addresses to send out a newsletter. The intention with the newsletter would be to update customers when new products are added to the site, or to send discount codes to newsletter subscribers which is a common practice.
+
+
+## Business Model
+Doggo Down Under is a Business-to-Customer (B2C) e-commerce platform specializing in dog products. The website provides an online storefront where customers can browse, purchase, and receive high-quality dog-related products delivered to their doorsteps. The platform caters to both new and returning customers, ensuring a seamless shopping experience with features such as a wishlist, shopping cart, secure checkout, and account management.
+
+### Revenue Model
+Doggo Down Under primarily generates revenue through direct product sales, with potential for expansion into additional revenue streams:
+
+1. Retail Sales:
+
+- A curated selection of dog products, including toys, accessories, grooming supplies, food, and treats.
+- Customers can add products to their shopping bag and complete purchases via Stripe-powered secure payments.
+
+2. Upselling & Cross-Selling:
+- Product recommendations on product pages to encourage additional purchases.
+- Special bundle offers or discounts for purchasing related items together.
+
+3. Loyalty & Repeat Business:
+- Wishlist feature allows customers to save favorite products for future purchases.
+- Email marketing via newsletter subscription, keeping customers engaged with promotions and new product releases.
+
+### Customer Segments
+Doggo Down Under primarily targets:
+- Dog Owners: Individuals looking for high-quality products for their pets.
+- New Pet Owners: First-time dog owners needing essential supplies.
+- Gift Buyers: People purchasing gifts for dog-loving friends and family.
+- Repeat Customers: Returning shoppers who benefit from promotions and loyalty incentives.
+
+### Key Features Supporting the Business Model
+- User-Friendly Navigation & Search Bar: Ensures customers can quickly find the products they need.
+- Secure Checkout with Stripe Integration: Provides a seamless and trustworthy payment experience.
+- Mobile & Desktop Optimization: Ensures a responsive shopping experience across all devices.
+- Newsletter Signup: Enables direct communication with customers for promotions and updates.
+- Social Media Links: Increases brand visibility and customer engagement via Facebook.
 
 
 ## Features
@@ -564,111 +642,31 @@ Wireframes were created in ascii style.
 ![ERD](static/images/readme/erd.png)
 </details>
 
-
-## SEO and Marketing
-
-A link to a popular dog charity was added in the footer to increase SEO for the website. 
-
-### SEO, Keywords
-
-The final keywords used on the website were dog, pet, store, online, shop, toys, food, accessories.
-
-
-### Marketing
-Based on Code Institute's Web Marketing, questions were collected to try to decide on marketing for the website.
-
-- What kind of business is it?
-  - B2C
-- Who are your customers?
-  - Customers looking for quality dog products in Australia
-- Which online platforms would you find lots of your users?
-  - Facebook
-- What do your users need? How could you deliver useful content to them?
-  - Dog products. Content could be delivered in cute dog vidoes
-- Would your business run sales or offer discounts? How do you think your users would most like to hear about these offers?
-  - Sales and discounts could be offered. Either through posting alerts for sales on social media or sending discount codes to people on the newsletter.
-- Would your business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
-  - Possibly a small budget. Perhaps it would start with low cost options like social media and newsletters.
-
-The e-commerce businesses that inspired aspects of this website include:
-  - [Petworld](https://www.petworld.ie/)
-  - [Petstop](https://www.petstop.ie/)
-
-
-### Social Media
-<details>
-<summary>Facebook Mockup</summary>
-
-![Facebook](static/images/readme/fb-page-doggo-down-under.png)
-</details>
-
-A Facebook business page was created for the website. Above is the screenshot of the page. This would be the primary social media site for the business to communicate with customers. Link to [Facebook page here](https://www.facebook.com/profile.php?id=61572882855702)
-
-
-### Email
-
-Through a subscription form in the footer, the website saves email addresses and allows the website owner to collect email addresses to send out a newsletter. The intention with the newsletter would be to update customers when new products are added to the site, or to send discount codes to newsletter subscribers which is a common practice.
-
-
-## Business Model
-Doggo Down Under is a Business-to-Customer (B2C) e-commerce platform specializing in dog products. The website provides an online storefront where customers can browse, purchase, and receive high-quality dog-related products delivered to their doorsteps. The platform caters to both new and returning customers, ensuring a seamless shopping experience with features such as a wishlist, shopping cart, secure checkout, and account management.
-
-### Revenue Model
-Doggo Down Under primarily generates revenue through direct product sales, with potential for expansion into additional revenue streams:
-
-1. Retail Sales:
-
-- A curated selection of dog products, including toys, accessories, grooming supplies, food, and treats.
-- Customers can add products to their shopping bag and complete purchases via Stripe-powered secure payments.
-
-2. Upselling & Cross-Selling:
-- Product recommendations on product pages to encourage additional purchases.
-- Special bundle offers or discounts for purchasing related items together.
-
-3. Loyalty & Repeat Business:
-- Wishlist feature allows customers to save favorite products for future purchases.
-- Email marketing via newsletter subscription, keeping customers engaged with promotions and new product releases.
-
-### Customer Segments
-Doggo Down Under primarily targets:
-- Dog Owners: Individuals looking for high-quality products for their pets.
-- New Pet Owners: First-time dog owners needing essential supplies.
-- Gift Buyers: People purchasing gifts for dog-loving friends and family.
-- Repeat Customers: Returning shoppers who benefit from promotions and loyalty incentives.
-
-### Key Features Supporting the Business Model
-- User-Friendly Navigation & Search Bar: Ensures customers can quickly find the products they need.
-- Secure Checkout with Stripe Integration: Provides a seamless and trustworthy payment experience.
-- Mobile & Desktop Optimization: Ensures a responsive shopping experience across all devices.
-- Newsletter Signup: Enables direct communication with customers for promotions and updates.
-- Social Media Links: Increases brand visibility and customer engagement via Facebook.
-
-
 ## Technologies Used
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5): mark-up language.
-- [CSS3](https://en.wikipedia.org/wiki/CSS): styling.
-- [JavaScript](https://www.javascript.com/): programming language.
-- [Python 3](https://www.python.org/): programming language.
-- [Django 3.2](https://www.djangoproject.com/)
-  - [Django allath](https://django-allauth.readthedocs.io/en/latest/index.html): user authentication.
-  - [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/): for forms.
-  - [Django countries](https://pypi.org/project/django-countries/): for countries in forms.
-  - [Crispy Bootstrap5](https://pypi.org/project/crispy-bootstrap5/): bootstrap5 template pack for crispy forms.
-- [Stripe](https://stripe.com): payments.
-- [JQuery](https://jquery.com/): UI.
-- [HTMX](https://htmx.org/): UI.
-- [Bootstrap](https://getbootstrap.com/): styling.
-- [Cloudinary](https://cloudinary.com/): store static and media files.
-- [GIT](https://git-scm.com/): for version control.
-- [GitHub](https://github.com/): for host repository.
-- [VSCode](https://code.visualstudio.com/): online IDE.
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+  - [Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html)
+  - [Django Crispy Forms](https://pypi.org/project/django-crispy-forms/)
+  - [Django countries](https://pypi.org/project/django-countries/)
+  - [Crispy Bootstrap5](https://pypi.org/project/crispy-bootstrap5/)
+- [Stripe](https://stripe.com)
+- [JQuery](https://jquery.com/)
+- [HTMX](https://htmx.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [GIT](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [VSCode](https://code.visualstudio.com/)
 - [Heroku](https://)
-- [Google Fonts](https://fonts.google.com/): to import fonts.
-- [Font Awesome](https://fontawesome.com/): to import icons.
-- [Balsamiq](https://balsamiq.com/): to create wireframes.
-- [Diagrams.net](https://www.diagrams.net/): for Entity Relationship Diagram.
-- [GIMP](https://www.gimp.org/): to edit images and create colour palette.
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Balsamiq](https://balsamiq.com/)
+- [Diagrams.net](https://www.diagrams.net/)
+- [GIMP](https://www.gimp.org/)
 
 
 ## Testing
@@ -698,6 +696,9 @@ There is an error in the console when a product is in the shopping bag. The erro
 ### Future Improvements
 - Add the ability to edit full name and username in the my profile form
 - Integrate the ratings functionality with the review feature
+- Add sizes to all products that can be sold in sizes and to add a stock counting feature
+- Add CRUD functionality for reviews. As of now reviews cannot be edited or deleted
+- Add defensive programming to ask users if they are sure threy want to delete or edit 
 
 
 ## Credits

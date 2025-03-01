@@ -1,5 +1,11 @@
-<!-- templates/contact/thanks.html -->
-<h2>Thank You!</h2>
-<p>Your message has been sent successfully. We will get back to you soon.
-    <a href="{% url 'home' %}" class="home-link">Keep Shopping while you wait</a>
-</p>
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main-content">
+    <h2>Thank You!</h2>
+    <p>Your message has been sent successfully. We will get back to you soon.
+        <a href="{% url 'products' %}" class="home-link" aria-label="Keep shopping link">Keep Shopping</a> while you
+        wait
+    </p>
+</div>
+{% endblock %}

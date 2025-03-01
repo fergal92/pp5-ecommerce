@@ -43,7 +43,8 @@
                     </ul>
                 </div>
                 {% endif %}
-                <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                <button class="btn btn-black rounded-0 text-uppercase float-right"
+                    aria-label="Update Information">Update Information</button>
             </form>
         </div>
         <div class="col-12 col-lg-6">
@@ -63,7 +64,8 @@
                         {% for order in orders %}
                         <tr>
                             <td>
-                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}"
+                                    aria-label="View order">
                                     {{ order.order_number|truncatechars:6 }}
                                 </a>
                             </td>
