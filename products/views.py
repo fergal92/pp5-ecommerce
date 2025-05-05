@@ -100,7 +100,7 @@ def product_detail(request, product_id):
         if review_form.is_valid():
             review = review_form.save(commit=False)
             review.product = product
-            review.user = request.user
+            review.user = request.user.userprofile
             review.save()
             messages.success(request, 'Your review has been submitted!')
 
