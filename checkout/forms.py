@@ -1,9 +1,30 @@
 from django import forms
+from django.core.validators import RegexValidator
 from .models import Order
 import pycountry
 
 
 class OrderForm(forms.ModelForm):
+    # Phone number validation (basic international format)
+    phone_number = forms.CharField(
+        validators=[
+            RegexValidator(
+                regex=r'^\+?[\d\s\-().]{7,20}$',
+                message="Enter a valid phone number (e.g. +123456789)."
+            )
+        ]
+    )
+
+    # Postal code validation (alphanumeric, allows spaces)
+    postcode = forms.CharField(
+        validators=[
+            RegexValidator(
+                regex=r'^[\w\s-]{3,10}$',
+                message="Enter a valid postal code."
+            )
+        ]
+    )
+
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -12,11 +33,6 @@ class OrderForm(forms.ModelForm):
                 'county',)
 
     def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
-
         super().__init__(*args, **kwargs)
         placeholders = {
             'full_name': 'Full Name',
@@ -27,10 +43,9 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
-            'county': 'County, Sate or Locality',
+            'county': 'County, State or Locality',
         }
 
-        # Generate country choices from pycountry
         countries = [(country.alpha_2, country.name)
                     for country in pycountry.countries]
         self.fields['country'].choices = [('', 'Select a country')] + countries

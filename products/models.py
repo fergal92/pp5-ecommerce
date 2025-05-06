@@ -53,4 +53,4 @@ class Review(models.Model):
         unique_together = ('product', 'user')
 
     def __str__(self):
-        return f'Review by {self.user.username} on {self.product.name}'
+        return f'Review by {self.user.user.username} on {self.product.name}'

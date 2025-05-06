@@ -127,7 +127,7 @@
                 {% if user.is_authenticated %}
                 {% if has_purchased %}
                 <h3>Leave a text review</h3>
-                <p>(Can't edit or delete reviews)</p>
+                <p>(Can't edit or delete reviews once they have been submitted)</p>
                 <form method="POST">
                     {% csrf_token %}
                     {{ review_form.as_p }}
