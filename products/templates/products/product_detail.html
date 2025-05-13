@@ -145,7 +145,7 @@
                 <h3>Reviews</h3>
                 {% for review in reviews %}
                 <div class="review">
-                    <p><strong>{{ review.user.username }}</strong> ({{ review.created_at|date:"F j, Y" }})</p>
+                    <p><strong>{{ review.user.user.username }}</strong> ({{ review.created_at|date:"F j, Y" }})</p>
                     <p>{{ review.review_text }}</p>
                 </div>
                 {% empty %}
